@@ -38,9 +38,6 @@ bp_nouveau_before_loop(); ?>
         $committed_university_name = get_field( 'university_name', $user_id_for_ACF );
         $committed_university_logo = get_field( 'university_logo', $user_id_for_ACF );
 
-        // COUNTRY FLAGS ICONS
-        $country_flag_icon = get_country_flag_icon($nationality);
-
         // ATHLETE VIEWS
         $total_profile_visit = visitors_get_profile_visit_count($user_id);
         // $total_unique_visitors = visitors_get_unique_visitors_count( $user_id );
@@ -375,38 +372,38 @@ bp_nouveau_before_loop(); ?>
 
 
               <ul class="list-inline info-bar">
-                <li class="list-inline-item">
-                  <span style="width:40px;height:20px;" class="flag-icon <?php echo $country_flag_icon; ?>"></span>
-                  <?php echo $nationality; ?>
-                </li>
-                <li class="list-inline-item"><i class="fas fa-eye"></i> &nbsp;
-                  <?php echo $total_profile_visit; ?> Profile Views
-                </li>
-                <li class="list-inline-item">
-                  <!-- VARIFICATION STATUS -->
-                  <?php echo $v_result; ?>
-                </li>
-                <li class="list-inline-item d-none"><i class="fas fa-users-class"></i>&nbsp;Class:
-                  <?php echo $enrollment_year; ?>
-                </li>
-              </ul>
-
-              <div class="text-content">
-                <?php echo $excerpt; ?>
-                <span class="readmore"><a href="<?php bp_member_permalink(); ?>">(View Athlete...)</a></span>
-              </div>
-
-
-            </div> <!-- end item-block -->
-
-          </div><!-- // .item -->
-
-        </article>
-
-      </div>
+                <!-- <li class="list-inline-item"><i class="fas fa-globe"></i> &nbsp; -->
+                <span style="width:50px;height:20px;" class="flag-icon flag-icon-us"></span>&nbsp;
+                <?php echo $nationality; ?>
     </li>
+    <li class="list-inline-item"><i class="fas fa-eye"></i> &nbsp;
+      <?php echo $total_profile_visit; ?> Profile Views
+    </li>
+    <li class="list-inline-item">
+      <!-- VARIFICATION STATUS -->
+      <?php echo $v_result; ?>
+    </li>
+    <li class="list-inline-item d-none"><i class="fas fa-users-class"></i>&nbsp;Class:
+      <?php echo $enrollment_year; ?>
+    </li>
+  </ul>
 
-    <?php endwhile; ?>
+  <div class="text-content">
+    <?php echo $excerpt; ?>
+    <span class="readmore"><a href="<?php bp_member_permalink(); ?>">(View Athlete...)</a></span>
+  </div>
+
+
+  </div> <!-- end item-block -->
+
+  </div><!-- // .item -->
+
+  </article>
+
+  </div>
+  </li>
+
+  <?php endwhile; ?>
 
   </ul>
 
