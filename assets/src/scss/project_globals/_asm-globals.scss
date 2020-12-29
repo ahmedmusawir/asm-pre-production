@@ -1,0 +1,348 @@
+/**
+ *
+ * STYLE: ASM GLOBAL
+ * 1.ATHLETE VIEW COUNT WIDGET ABOVE RIGHT SIDEBAR
+ * 2.GRAVITY REGISTRATION / SIGNUP FORM 
+ * 3.CHAT ROOM 
+ */
+
+// 1.ATHLETE VIEW COUNT WIDGET ABOVE RIGHT SIDEBAR
+// THIS IS NOT A SIDEBAR WIDGET, THUS BELONGS IN PROJECT GLOBAL
+#athlete-view-count-box {
+  // border: 4px dotted red;
+  .view-count-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 2rem;
+    margin-bottom: 0;
+  }
+
+  margin-bottom: 2rem;
+  .box-content {
+    // border: 4px dotted blue;
+    box-shadow: 1px 1px 5px gray;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 1rem;
+
+    .versity-logo {
+      img {
+        width: 80px;
+        margin-top: 1rem;
+      }
+    }
+
+    .text-content {
+      padding: 0;
+      margin: 0;
+
+      .icon-text-box {
+        background-color: darken($color: #4b5ec1, $amount: 10%);
+        border: 1px solid darken($color: #4b5ec1, $amount: 10%);
+        // CSS BUG FIX
+        .icon-text {
+          &::before {
+            content: "";
+          }
+          color: white;
+          text-align: center;
+          font-size: 1rem;
+          font-weight: 700;
+          font-family: $primary-font;
+        }
+      }
+
+      .text-only-box {
+        border: 1px solid #e7e7e7;
+        background-color: #e7e7e7;
+        .text-only {
+          text-align: center;
+          font-size: 0.8rem;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}
+
+// 2.GRAVITY REGISTRATION / SIGNUP FORM
+
+#gform_wrapper_1 {
+  // border: 1rem dotted red;
+  // position: fixed;
+
+  #gf_progressbar_wrapper_1 {
+    display: none;
+  }
+  .signup-page-1 {
+    // border: 1rem dotted red;
+
+    #asm-reg-logo {
+      // border: 1rem dotted blue;
+      width: 90px;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .asm-reg-title {
+      font-size: 2rem;
+      font-weight: 700;
+      color: $cg-primary;
+    }
+    .asm-reg-subtitle {
+      font-size: 0.9rem;
+      color: gray;
+    }
+  }
+
+  .signup-page-2 {
+    // border: 1rem dotted blue;
+    margin-top: -1rem;
+    .asm-reg-dots {
+      // border: 4px dotted dodgerblue;
+      text-align: center;
+      margin-left: -2rem !important;
+
+      i {
+        font-size: 1rem;
+        color: red;
+        padding-left: 1.5rem;
+      }
+    }
+    .asm-reg-page2-title {
+      font-size: 2rem;
+      font-weight: 700;
+      text-align: center;
+    }
+  }
+
+  .signup-page-3 {
+    // border: 1rem dotted blue;
+    margin-top: -1rem;
+    .asm-reg-dots {
+      // border: 4px dotted dodgerblue;
+      text-align: center;
+      margin-left: -2rem !important;
+
+      i {
+        font-size: 1rem;
+        color: red;
+        padding-left: 1.5rem;
+      }
+    }
+    .asm-reg-page3-title {
+      font-size: 2rem;
+      font-weight: 700;
+      text-align: center;
+    }
+  }
+  #gform_page_1_3 {
+    // border: 1px dotted blue;
+    // ATHLETE PHONE
+    #input_1_26,
+    #input_1_24 {
+      padding: 1rem;
+      border-radius: 10px;
+    }
+  }
+}
+
+// THE REGISTRATION FORM PAGE 1
+#gform_page_1_1 {
+  // border: 4px dotted red;
+
+  #field_1_23 {
+    padding: 0;
+    margin-bottom: -1rem;
+    // border: 4px dotted blue;
+
+    #input_1_23_3,
+    #input_1_23_6 {
+      padding: 1rem;
+      border-radius: 10px;
+    }
+  }
+
+  #field_1_22 {
+    padding: 0;
+    // border: 4px dotted blue;
+
+    #input_1_22 {
+      padding: 1rem;
+      border-radius: 10px;
+    }
+
+    .gfield_required {
+      display: none;
+    }
+  }
+
+  #foot-note {
+    // border: 1rem dotted red;
+    p {
+      font-size: 0.8rem;
+      color: gray;
+    }
+  }
+
+  #gform_next_button_1_10 {
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: red;
+    color: white;
+    width: 100%;
+  }
+}
+
+// GFORM DEFAULT LOADER SPINNER
+body img.gform_ajax_spinner {
+  // display: none !important;
+  // border: 1rem solid red;
+  width: 50px !important;
+  margin-top: 3rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// THE REGISTRATION FORM PAGE 2
+#gform_page_1_2 {
+  #input_1_6 {
+    li {
+      background-color: #e3e3e3;
+      padding: 1rem !important;
+      margin-bottom: 1rem;
+      border-radius: 10px;
+
+      label {
+        margin-top: 0.5rem;
+        padding-left: 1rem;
+        font-weight: 700;
+      }
+    }
+  }
+
+  #gform_previous_button_1_11 {
+    float: left;
+    width: 200px;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: red;
+    color: white;
+  }
+
+  #gform_next_button_1_11 {
+    float: right;
+    width: 200px;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: red;
+    color: white;
+  }
+}
+
+// THE REGISTRATION FORM PAGE 2
+#gform_page_1_3 {
+  #gform_previous_button_1 {
+    width: 200px;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: red;
+    color: white;
+  }
+
+  #gform_submit_button_1 {
+    width: 200px;
+    padding: 1rem;
+    border-radius: 10px;
+    // background-color: red;
+    color: white;
+  }
+}
+
+// 3.CHAT ROOM
+#yobro-inbox {
+  // border: 4px dotted red;
+  .yoBro-chatbox-main-content {
+    border: none;
+  }
+  // LEFT COLUMN
+  .yoBro-chatbox-sidebar {
+    .yoBro-chatHistory {
+      .yoBro-singleChatMsg {
+        .yoBro-userImgGrp {
+          .yoBro-userImg {
+            width: 60px;
+            height: 60px;
+          }
+        }
+      }
+      .yoBro-singleChatMsg.active {
+        color: white;
+        background-color: $cg-secondary;
+
+        .yoBro-msgWrapper {
+          .yoBro-msgHeader {
+            h5 {
+              color: white;
+            }
+          }
+          .msgExcerpt {
+            color: white;
+            p {
+              color: white;
+            }
+            img {
+              width: 100px !important;
+              border: 2px solid red;
+            }
+          }
+        }
+      }
+    }
+  }
+  // RIGHT COLUMN
+  .yoBro-chatbox {
+    .yoBro-chatBody {
+      // HEADER
+      .yoBro-chatBody-header {
+        .ion-android-more-vertical {
+          color: white;
+        }
+        .new-msg {
+          // background-color: red;
+          color: white;
+          border: 1px solid black;
+          padding: 1rem 2rem;
+          box-shadow: 2px 2px 6px gray;
+          background: linear-gradient(lighten(crimson, 15%), darken(crimson, 10%));
+        }
+        border: 4px solid $cg-primary;
+        background-color: lighten($color: $cg-primary, $amount: 8%);
+      }
+      // SINGLE MESSAGE
+      .yoBro-singleChatMsg {
+        .yoBro-chatMsgWrapper {
+          .yoBro-chatMsgContent {
+            padding: 1rem;
+            border-radius: 20px;
+
+            .msgText {
+              font-weight: 700;
+              p {
+                font-weight: 700;
+              }
+            }
+          }
+        }
+      }
+      // FOOTER TEXT ENTRY BAR
+      .yoBro-TypeArea {
+        // border: 1px solid red;
+        .yoBro-sendBtn {
+          background-color: lighten($color: $cg-primary, $amount: 8%);
+        }
+      }
+    }
+  }
+}

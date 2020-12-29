@@ -1,0 +1,47 @@
+/**
+ *
+ * General Styles for Single Post or Page
+ *
+ */
+
+#general-page-header {
+	width: 100vw;
+	height: 50px;
+	background-color: $cg-secondary;
+	background-size: cover;
+	background-position: top center;
+	margin-top: 50px;
+}
+
+// .post-navigation {
+// 	@include clearfix;
+// 	margin-top: 2rem;
+// 	margin-bottom: 2rem;
+
+// 	.nav-links {
+// 		.nav-previous {
+// 			float: left;
+// 		}
+// 		.nav-next {
+// 			float: right;
+// 		}
+// 	}
+// }
+
+// .content-area {
+
+// 	.post-thumbnail {
+// 		img {
+// 			width: 100%;
+// 		}
+// 	}
+
+// 	@media (max-width: 800px) {
+// 		img {
+// 			display: block;
+// 			clear: both;
+// 			width: 100%;
+// 			padding-bottom: 2rem;
+// 		}
+// 	}
+// }
