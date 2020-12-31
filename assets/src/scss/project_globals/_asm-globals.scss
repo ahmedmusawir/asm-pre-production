@@ -26,9 +26,13 @@
     margin-bottom: 1rem;
 
     .versity-logo {
+      // border: 4px dotted blue;
+      padding: 0 !important;
+      margin: 0 !important;
       img {
-        width: 80px;
-        margin-top: 1rem;
+        // border: 4px dotted red;
+        width: 95px;
+        // margin-top: 1rem;
       }
     }
 
@@ -38,16 +42,21 @@
 
       .icon-text-box {
         background-color: darken($color: #4b5ec1, $amount: 10%);
+        // background: linear-gradient(lighten(#4b5ec1, 15%), #4b5ec1);
         border: 1px solid darken($color: #4b5ec1, $amount: 10%);
+        padding-left: 1.5rem;
+        padding-top: 0.15rem;
+        padding-bottom: 0.15rem;
+        padding-right: 0.5rem;
         // CSS BUG FIX
         .icon-text {
           &::before {
-            content: "";
+            content: '';
           }
           color: white;
-          text-align: center;
+          text-align: left;
           font-size: 1rem;
-          font-weight: 700;
+          font-weight: 800;
           font-family: $primary-font;
         }
       }
@@ -55,10 +64,14 @@
       .text-only-box {
         border: 1px solid #e7e7e7;
         background-color: #e7e7e7;
+        padding-left: 1.5rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        padding-right: 0.5rem;
         .text-only {
-          text-align: center;
-          font-size: 0.8rem;
-          font-weight: 700;
+          text-align: left;
+          font-size: 0.9rem;
+          font-weight: 800;
         }
       }
     }
@@ -174,6 +187,15 @@
 
     .gfield_required {
       display: none;
+    }
+  }
+
+  #input_1_27_container {
+    // border: 4px dotted blue;
+    #input_1_27,
+    #input_1_27_2 {
+      padding: 1rem;
+      border-radius: 10px;
     }
   }
 
@@ -315,7 +337,10 @@ body img.gform_ajax_spinner {
           border: 1px solid black;
           padding: 1rem 2rem;
           box-shadow: 2px 2px 6px gray;
-          background: linear-gradient(lighten(crimson, 15%), darken(crimson, 10%));
+          background: linear-gradient(
+            lighten(crimson, 15%),
+            darken(crimson, 10%)
+          );
         }
         border: 4px solid $cg-primary;
         background-color: lighten($color: $cg-primary, $amount: 8%);

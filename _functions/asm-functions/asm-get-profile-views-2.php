@@ -3,7 +3,7 @@
  * GET RANDOM ATHLETES IDS FOR THE VISITOR COUNT MODULE
  */
 
-
+// DISPLAY RANDOM VISITOR LIST
 function display_visitor_list( $users_obj ) {
 
   // $users_obj = visitors_get_recent_visitors( $id, $count = 5 );
@@ -28,22 +28,18 @@ function display_visitor_list( $users_obj ) {
       $current_user_proile_link = bp_core_get_userlink( $value->user_id );
       // CURRENT LOOP USER
       $current_user = get_user_by( 'id', $value->user_id );
-      // print_r($current_user);
       // OBJECTS FROM THE RECENT VISITOR PLUGIN 
       $visitor_id = $value->visitor_id;
-      // echo 'visitor id: ' . $visitor_id;
       // VARSITY NAME
       $versity_name = xprofile_get_field_data( 435, $visitor_id, $multi_format = 'array' );
-      // echo $versity_name;
       // VERSITY LOGO IMAGE
       $versity_logo = xprofile_get_field_data( 439, $visitor_id, $multi_format = 'array' );
-      // echo $versity_logo;
 
       // GETTING USER DATA
       $user_obj = get_userdata($visitor_id);
       $user_id_for_ACF = "user_" . $value->user_id;
       $committed_status = get_field( 'athlete_availability', $user_id_for_ACF );
-      // echo 'committed status: ' . $committed_status;
+      // echo $committed_status;
 
       // COMMITTED STATUS
 
@@ -67,7 +63,7 @@ function display_visitor_list( $users_obj ) {
         $committed_result = '
         <div class="icon-text-box">
           <h4 class="icon-text">
-            <i class="fas fa-eye"></i> Coach Viewed
+            <i class="fas fa-eye"></i> Viewed
           </h4>
         </div>
       ';
@@ -86,31 +82,21 @@ function display_visitor_list( $users_obj ) {
       $user_obj->roles[1] = null;
     }
 
-    $user_role = $user_obj->roles[0];
-    // echo '<pre>';
-    // print_r($user_obj->roles);
-    // echo '</pre>';
-   
+    $user_role = $user_obj->roles[1];
 
     // CHECKING FOR COACH VIEWS
     if ( $user_role == 'coach') :
     ?>
 <div class="box-content row">
-  <figure class="versity-logo col-sm-5 d-flex justify-content-center align-items-center">
+  <figure class="versity-logo col-sm-4 d-flex justify-content-center align-items-center">
     <?php echo $versity_logo; ?>
   </figure>
-  <article class="text-content col-sm-7">
-    <!-- <div class="icon-text-box bg-danger">
-      <h4 class="icon-text">
-        <i class="fas fa-eye"></i> Viewed
-      </h4>
-    </div> -->
+  <article class="text-content col-sm-8">
     <?php echo $committed_result; ?>
 
     <div class="text-only-box">
       <h5 class="text-only">
-        <!-- <?php //echo $versity_name; ?> Coaches viewed <br> -->
-        <?php //echo $current_user->display_name; ?>
+        <!-- <?php //echo $current_user->display_name; ?> -->
         <?php echo $current_user_proile_link; ?>
       </h5>
     </div>
@@ -130,8 +116,7 @@ function display_visitor_list( $users_obj ) {
 }
 
 
-// Add this code in your function.php
-
+// RANDOMIZE USER QUERY
 function my_random_user_query( $class ) {
     if( 'rand' == $class->query_vars['orderby'] )
         $class->query_orderby = str_replace( 'user_login', 'RAND()', $class->query_orderby );
@@ -140,6 +125,7 @@ function my_random_user_query( $class ) {
 }
 add_action( 'pre_user_query', 'my_random_user_query' );
 
+// GET RANDOM ATHLETE PROFILE VIEWS WIDGET
 function get_asm_profile_views() {
 
   $args = array(

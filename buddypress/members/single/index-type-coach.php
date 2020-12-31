@@ -236,7 +236,7 @@ get_header();
   var adjustAnchor = function() {
 
     var $anchor = $(':target'),
-      fixedElementHeight = 440;
+      fixedElementHeight = 240;
 
     if ($anchor.length > 0) {
 

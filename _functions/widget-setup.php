@@ -16,6 +16,16 @@ function freeman_widgets_init() {
 	) );
 
 	register_sidebar( array(
+		'name'          => esc_html__( 'ASM Custom Sidebar', 'asm' ),
+		'id'            => 'sidebar-2',
+		'description'   => esc_html__( 'Add widgets here.', 'asm' ),
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
+
+	register_sidebar( array(
 		'name'          => esc_html__( 'Footer Sidebar 1', 'freeman' ),
 		'id'            => 'footer-sidebar-1',
 		'description'   => esc_html__( 'Add widgets here.', 'freeman' ),

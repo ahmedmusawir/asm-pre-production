@@ -123,7 +123,7 @@
 
           <a class="moose-item" href="#" id="athAdvanceFilter" data-toggle="modal">
             <li class="list-inline-item">
-              <span class="btn-text">OTHER FILTERS</span>
+              <span class="btn-text">ADVANCE FILTERS</span>
             </li>
           </a>
 
@@ -143,7 +143,7 @@
         <div class="row top-row">
           <div class="col-md-2">
 
-            <h3 class="menu-title float-left pt-2 text-light">Other Filters</h3>
+            <h3 class="menu-title float-left pt-2 text-light">Advance Filters</h3>
 
           </div>
           <div class="col-md-10">
@@ -949,7 +949,7 @@
           <!-- ATHLETE VIEW COUNT BOX ON RIGHT SIDEBAR END -->
 
           <!-- THE SIDEBAR -->
-          <?php get_sidebar(); ?>
+          <?php get_sidebar('custom'); ?>
         </div>
 
       </div>

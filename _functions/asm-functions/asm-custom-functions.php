@@ -392,575 +392,401 @@ add_action('wp_logout','asm_redirect_after_logout');
     case 'Guyana': 
     $country_flag_icon = 'flag-icon-gy';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'Haiti': 
+    $country_flag_icon = 'flag-icon-ht';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'Heard-Island-and-McDonald-Islands': 
+    $country_flag_icon = 'flag-icon-hm';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'Holy-See': 
+    $country_flag_icon = 'flag-icon-va';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'Honduras': 
+    $country_flag_icon = 'flag-icon-hn';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'Hong-Kong': 
+    $country_flag_icon = 'flag-icon-hk';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'Hungary': 
+    $country_flag_icon = 'flag-icon-hu';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'Iceland': 
+    $country_flag_icon = 'flag-icon-is';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'India': 
+    $country_flag_icon = 'flag-icon-in';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'Indonesia': 
+    $country_flag_icon = 'flag-icon-id';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'Iran': 
+    $country_flag_icon = 'flag-icon-ir';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'Iraq': 
+    $country_flag_icon = 'flag-icon-iq';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'Ireland': 
+    $country_flag_icon = 'flag-icon-ie';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'Isle-of-Man': 
+    $country_flag_icon = 'flag-icon-im';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'Israel': 
+    $country_flag_icon = 'flag-icon-il';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'Italy': 
+    $country_flag_icon = 'flag-icon-it';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'Jamaica': 
+    $country_flag_icon = 'flag-icon-jm';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'Japan': 
+    $country_flag_icon = 'flag-icon-jp';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'Jersey': 
+    $country_flag_icon = 'flag-icon-je';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'Jordan': 
+    $country_flag_icon = 'flag-icon-jo';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'Kazakhstan': 
+    $country_flag_icon = 'flag-icon-kz';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'Kenya': 
+    $country_flag_icon = 'flag-icon-ke';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'Kiribati': 
+    $country_flag_icon = 'flag-icon-ki';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'North-Korea': 
+    $country_flag_icon = 'flag-icon-kr';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'South-Korea': 
+    $country_flag_icon = 'flag-icon-kp';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'Kuwait': 
+    $country_flag_icon = 'flag-icon-kw';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'Kyrgyzstan': 
+    $country_flag_icon = 'flag-icon-kg';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'Laos': 
+    $country_flag_icon = 'flag-icon-ls';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'Latvia': 
+    $country_flag_icon = 'flag-icon-lv';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'Lebanon': 
+    $country_flag_icon = 'flag-icon-lb';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'Lesotho': 
+    $country_flag_icon = 'flag-icon-ls';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'Liberia': 
+    $country_flag_icon = 'flag-icon-lr';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'Libya': 
+    $country_flag_icon = 'flag-icon-ly';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'Liechtenstein': 
+    $country_flag_icon = 'flag-icon-li';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'Lithuania': 
+    $country_flag_icon = 'flag-icon-lt';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'Luxembourg': 
+    $country_flag_icon = 'flag-icon-lu';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'Macau': 
+    $country_flag_icon = 'flag-icon-mo';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'Macedonia': 
+    $country_flag_icon = 'flag-icon-mk';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'Madagascar': 
+    $country_flag_icon = 'flag-icon-mg';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'Malawi': 
+    $country_flag_icon = 'flag-icon-mw';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'Malaysia': 
+    $country_flag_icon = 'flag-icon-my';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'Maldives': 
+    $country_flag_icon = 'flag-icon-mv';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'Mali': 
+    $country_flag_icon = 'flag-icon-ml';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'Malta': 
+    $country_flag_icon = 'flag-icon-mt';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'Marshall-Islands': 
+    $country_flag_icon = 'flag-icon-mh';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'Martinique': 
+    $country_flag_icon = 'flag-icon-mq';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'Mauritania': 
+    $country_flag_icon = 'flag-icon-mr';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'Mauritius': 
+    $country_flag_icon = 'flag-icon-mu';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'Mayotte': 
+    $country_flag_icon = 'flag-icon-yt';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'Mexico': 
+    $country_flag_icon = 'flag-icon-mx';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'Federated-States-of-Micronesia': 
+    $country_flag_icon = 'flag-icon-fm';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'Moldova': 
+    $country_flag_icon = 'flag-icon-md';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'Monaco': 
+    $country_flag_icon = 'flag-icon-mc';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'Mongolia': 
+    $country_flag_icon = 'flag-icon-mn';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'Montserrat': 
+    $country_flag_icon = 'flag-icon-ms';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'Morocco': 
+    $country_flag_icon = 'flag-icon-ma';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'Mozambique': 
+    $country_flag_icon = 'flag-icon-mz';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'Namibia': 
+    $country_flag_icon = 'flag-icon-na';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'Nauru': 
+    $country_flag_icon = 'flag-icon-nr';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'Nepal': 
+    $country_flag_icon = 'flag-icon-np';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'Netherlands': 
+    $country_flag_icon = 'flag-icon-nl';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'New-Caledonia': 
+    $country_flag_icon = 'flag-icon-nc';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'Nicaragua': 
+    $country_flag_icon = 'flag-icon-ni';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'Niger': 
+    $country_flag_icon = 'flag-icon-ne';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'Nigeria': 
+    $country_flag_icon = 'flag-icon-ng';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'Niue': 
+    $country_flag_icon = 'flag-icon-nu';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'Norfolk-Island': 
+    $country_flag_icon = 'flag-icon-nf';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'Northern-Mariana-Islands': 
+    $country_flag_icon = 'flag-icon-mp';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'Norway': 
+    $country_flag_icon = 'flag-icon-no';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'Oman': 
+    $country_flag_icon = 'flag-icon-om';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'Pakistan': 
+    $country_flag_icon = 'flag-icon-pk';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'Palau': 
+    $country_flag_icon = 'flag-icon-pw';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'Panama': 
+    $country_flag_icon = 'flag-icon-pa';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'Papua-New-Guinea': 
+    $country_flag_icon = 'flag-icon-pg';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'Paraguay': 
+    $country_flag_icon = 'flag-icon-py';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'Peru': 
+    $country_flag_icon = 'flag-icon-pe';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'Philippines': 
+    $country_flag_icon = 'flag-icon-ph';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'Pitcairn-Islands': 
+    $country_flag_icon = 'flag-icon-pn';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'Poland': 
+    $country_flag_icon = 'flag-icon-pl';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'Portugal': 
+    $country_flag_icon = 'flag-icon-pt';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'Puerto-Rico': 
+    $country_flag_icon = 'flag-icon-pr';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'Qatar': 
+    $country_flag_icon = 'flag-icon-qa';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'Reunion': 
+    $country_flag_icon = 'flag-icon-re';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'Romania': 
+    $country_flag_icon = 'flag-icon-ro';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'Russia': 
+    $country_flag_icon = 'flag-icon-ru';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'Rwanda': 
+    $country_flag_icon = 'flag-icon-rw';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'Saint-Helena': 
+    $country_flag_icon = 'flag-icon-sh';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'Saint-Kitts-and-Nevis': 
+    $country_flag_icon = 'flag-icon-kn';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'Saint-Lucia': 
+    $country_flag_icon = 'flag-icon-lc';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'Saint-Pierre-and-Miquelon': 
+    $country_flag_icon = 'flag-icon-pm';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'Saint-Vincent-and-the-Grenadines': 
+    $country_flag_icon = 'flag-icon-vc';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'Samoa': 
+    $country_flag_icon = 'flag-icon-ws';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'San-Marino': 
+    $country_flag_icon = 'flag-icon-sm';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'Sao-Tome-and-Principe': 
+    $country_flag_icon = 'flag-icon-st';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'Saudi-Arabia': 
+    $country_flag_icon = 'flag-icon-sa';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'Senegal': 
+    $country_flag_icon = 'flag-icon-sn';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'Serbia-and-Montenegro': 
+    $country_flag_icon = 'flag-icon-rs';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'Seychelles': 
+    $country_flag_icon = 'flag-icon-sc';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'Sierra-Leone': 
+    $country_flag_icon = 'flag-icon-sl';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'Singapore': 
+    $country_flag_icon = 'flag-icon-sg';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'Slovakia': 
+    $country_flag_icon = 'flag-icon-sk';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'Slovenia': 
+    $country_flag_icon = 'flag-icon-si';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'Solomon-Islands': 
+    $country_flag_icon = 'flag-icon-sb';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'Somalia': 
+    $country_flag_icon = 'flag-icon-so';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'South-Africa': 
+    $country_flag_icon = 'flag-icon-za';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'South-Georgia-and-the-South-Sandwich-Islands': 
+    $country_flag_icon = 'flag-icon-gs';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'Spain': 
+    $country_flag_icon = 'flag-icon-es';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'Sri-Lanka': 
+    $country_flag_icon = 'flag-icon-lk';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'Sudan': 
+    $country_flag_icon = 'flag-icon-sd';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'Suriname': 
+    $country_flag_icon = 'flag-icon-sr';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'Svalbard': 
+    $country_flag_icon = 'flag-icon-sj';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'Sweden': 
+    $country_flag_icon = 'flag-icon-se';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'Switzerland': 
+    $country_flag_icon = 'flag-icon-ch';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'Syria': 
+    $country_flag_icon = 'flag-icon-sy';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'Taiwan': 
+    $country_flag_icon = 'flag-icon-tw';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'Tajikistan': 
+    $country_flag_icon = 'flag-icon-tj';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'Tanzania': 
+    $country_flag_icon = 'flag-icon-tz';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'Thailand': 
+    $country_flag_icon = 'flag-icon-th';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'Timor-Leste': 
+    $country_flag_icon = 'flag-icon-tl';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'Togo': 
+    $country_flag_icon = 'flag-icon-tg';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'Tokelau': 
+    $country_flag_icon = 'flag-icon-tk';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'Tonga': 
+    $country_flag_icon = 'flag-icon-to';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'Trinidad-and-Tobago': 
+    $country_flag_icon = 'flag-icon-tt';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'Tunisia': 
+    $country_flag_icon = 'flag-icon-tn';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'Turkey': 
+    $country_flag_icon = 'flag-icon-tr';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'Turkmenistan': 
+    $country_flag_icon = 'flag-icon-tm';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'Turks-and-Caicos-Islands': 
+    $country_flag_icon = 'flag-icon-tc';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'Tuvalu': 
+    $country_flag_icon = 'flag-icon-tv';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'Uganda': 
+    $country_flag_icon = 'flag-icon-ug';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'Ukraine': 
+    $country_flag_icon = 'flag-icon-ua';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'United-Arab-Emirates': 
+    $country_flag_icon = 'flag-icon-ae';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'Uruguay': 
+    $country_flag_icon = 'flag-icon-uy';
     break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
-    break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
-    break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
-    break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
-    break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
-    break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
-    break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
-    break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
-    break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
-    break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
-    break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
-    break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
-    break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
-    break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
-    break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
-    break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
-    break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
-    break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
-    break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
-    break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
-    break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
-    break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
-    break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
-    break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
-    break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
-    break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
-    break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
-    break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
-    break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
-    break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
-    break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
-    break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
-    break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
-    break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
-    break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
-    break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
-    break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
-    break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
-    break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
-    break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
-    break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
-    break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
-    break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
-    break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
-    break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
-    break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
-    break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
-    break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
-    break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
-    break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
-    break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
-    break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
-    break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
-    break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
-    break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
-    break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
-    break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
-    break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
-    break;
-    case 'Canada': 
-    $country_flag_icon = 'flag-icon-ca';
+    case 'Uzbekistan': 
+    $country_flag_icon = 'flag-icon-uz';
     break;
     case 'United-States': 
     $country_flag_icon = 'flag-icon-us';
@@ -968,6 +794,34 @@ add_action('wp_logout','asm_redirect_after_logout');
     case 'United-Kingdom': 
     $country_flag_icon = 'flag-icon-gb';
     break;
+    case 'Vanuatu': 
+    $country_flag_icon = 'flag-icon-vu';
+    break;
+    case 'Venezuela': 
+    $country_flag_icon = 'flag-icon-ve';
+    break;
+    case 'Vietnam': 
+    $country_flag_icon = 'flag-icon-vn';
+    break;
+    case 'Virgin-Islands': 
+    $country_flag_icon = 'flag-icon-vg';
+    break;
+    case 'Wallis-and-Futuna': 
+    $country_flag_icon = 'flag-icon-wf';
+    break;
+    case 'Western-Sahara': 
+    $country_flag_icon = 'flag-icon-eh';
+    break;
+    case 'Yemen': 
+    $country_flag_icon = 'flag-icon-ye';
+    break;
+    case 'Zambia': 
+    $country_flag_icon = 'flag-icon-zm';
+    break;
+    case 'Zimbabwe': 
+    $country_flag_icon = 'flag-icon-zw';
+    break;
+    
     default: 
     $country_flag_icon = 'flag-icon-us';
    }

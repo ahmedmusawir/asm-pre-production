@@ -363,7 +363,7 @@ get_header();
 
           <!-- THE SIDEBAR -->
           <div class="sidebar-area mt-5">
-            <?php get_sidebar(); ?>
+            <?php get_sidebar('custom'); ?>
           </div>
 
       </article>
@@ -381,7 +381,7 @@ get_header();
   var adjustAnchor = function() {
 
     var $anchor = $(':target'),
-      fixedElementHeight = 440;
+      fixedElementHeight = 240;
 
     if ($anchor.length > 0) {
 
@@ -390,9 +390,7 @@ get_header();
         .animate({
           scrollTop: $anchor.offset().top - fixedElementHeight
         }, 200);
-
     }
-
   };
 
   $(window).on('hashchange load', function() {

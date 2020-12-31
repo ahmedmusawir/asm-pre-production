@@ -172,10 +172,13 @@ body.buddypress {
 
   // LARGE NEW PROFILE HEADER
   #large-profile-header {
-    // border: 5px dotted red;
     height: 200px;
+    // position: fixed;
+    // top: 210px;
     width: 100%;
-    margin-top: 42px;
+    z-index: 1000;
+    // background-color: gray;
+    // background: url(/wp-content/uploads/athlete-header.jpg);
     background: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.6)),
       url('/wp-content/uploads/athlete-header.jpg');
     background-position: center top;
@@ -637,7 +640,7 @@ body.buddypress {
     // border: 4px dotted red;
 
     #item-body {
-      // margin-top: 260px;
+      margin-top: 260px;
       // margin-top: 240px;
       position: relative;
 
@@ -1461,9 +1464,6 @@ body.buddypress {
             font-size: 0.5rem;
             font-weight: 700;
           }
-        }
-        #sports-select {
-          background-color: lighten($color: gray, $amount: 43%);
         }
 
         a.moose-item {

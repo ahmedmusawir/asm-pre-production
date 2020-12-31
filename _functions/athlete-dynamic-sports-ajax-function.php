@@ -40,9 +40,10 @@ add_action('wp_ajax_athlete_dynamic_sports_ajax_function', 'athlete_dynamic_spor
       
     }
         
-  $unique_location_list = array_unique($sports);
+  $unique_sports_list = array_unique($sports);
+  sort($unique_sports_list);
 
-  foreach ($unique_location_list as $single_option) {
+  foreach ($unique_sports_list as $single_option) {
     echo $single_option;
   }
 

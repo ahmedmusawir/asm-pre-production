@@ -71,8 +71,15 @@
 
     <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'cyberize' ); ?></a>
 
-    <header id="header-asm" class="site-header">
+    <style>
+    /* #header-asm {
+      max-width: 1920px !important;
+      margin: auto !important;
+      border: 0.3rem dotted red;
+    } */
+    </style>
 
+    <header id="header-asm" class="site-header">
 
       <!-- Moose_Framework_2 NAVIGATION GOES HERE -->
 
@@ -81,7 +88,6 @@
           <a class="navbar-logo" href="<?php echo esc_url( home_url( '/' ) ); ?>">
             <img src=" <?php the_field('site_logo', 'option') ?>" class="img-fluid" alt="">
           </a>
-
           <!-- THE HEADER SEACH FORM  -->
           <div id="header-search" class="mr-auto">
             <?php //get_search_form(); ?>

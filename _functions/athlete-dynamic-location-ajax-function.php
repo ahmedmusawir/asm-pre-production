@@ -41,6 +41,8 @@ add_action('wp_ajax_athlete_dynamic_location_ajax_function', 'athlete_dynamic_lo
     }
         
   $unique_location_list = array_unique($locations);
+  sort($unique_location_list);
+
 
   foreach ($unique_location_list as $single_option) {
 
