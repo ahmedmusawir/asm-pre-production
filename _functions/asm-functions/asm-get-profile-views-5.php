@@ -86,8 +86,7 @@ function display_visitor_list( $users_obj ) {
       $user_obj->roles[1] = null;
     }
 
-    $visitor_profile_link = bp_core_get_user_domain( $visitor_id );
-    // echo $visitor_profile_link;
+
     $user_role = $user_obj->roles[0];
     // echo '<pre>';
     // print_r($user_obj->roles);
@@ -99,9 +98,7 @@ function display_visitor_list( $users_obj ) {
     ?>
 <div class="box-content row">
   <figure class="versity-logo col-sm-5 d-flex justify-content-center align-items-center">
-    <a href="<?php echo $visitor_profile_link;  ?>">
-      <?php echo $versity_logo; ?>
-    </a>
+    <?php echo $versity_logo; ?>
   </figure>
   <article class="text-content col-sm-7">
     <!-- <div class="icon-text-box bg-danger">

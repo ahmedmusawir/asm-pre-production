@@ -92,12 +92,12 @@
     <hr>
     <div class="ml-md-5 widgets_wrapper">
       <div class="copyright">
-        <div class="float-left">
+        <div class="float-left pl-5">
 
           <?php the_field('theme_footer_text', 'option') ?>
 
         </div>
-        <div class="footer-old-logo float-right">
+        <div class="footer-old-logo float-right d-none d-sm-block">
           <img class="w-25" src="/wp-content/uploads/asm-old-footer-logo-300px.png" alt="">
         </div>
 
@@ -110,9 +110,9 @@
 		=            THIS IS FOR DEBUGGING. PLZ DISABLE WHEN READY TO PUBLISH            =
 		===============================================================================-->
 
-  <div style="color: dodgerblue"><strong>Current template:</strong>
-    <?php echo get_current_template( true ); ?>
-  </div>
+  <!-- <div style="color: dodgerblue"><strong>Current template:</strong>
+    <?php //echo get_current_template( true ); ?>
+  </div> -->
 
   <!-- ====  End of THIS IS FOR DEBUGGING. PLZ DISABLE WHEN READY TO PUBLISH  ==== -->
 

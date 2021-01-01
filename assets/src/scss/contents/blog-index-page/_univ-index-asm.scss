@@ -6,6 +6,7 @@
 .is-active {
   display: block !important;
 }
+
 .univ-index-block-asm {
   position: relative;
   margin-top: 68px;
@@ -14,7 +15,6 @@
   #general-univ-page-header {
     position: fixed;
     top: 80px;
-    // top: 66px;
     z-index: 100;
     width: 100vw;
     height: 65px;
@@ -167,6 +167,7 @@
 
     #menu-university-menu {
       // @extend .row;
+      width: 100%;
       border: 1px solid gray;
       border-radius: 20px;
       background-color: lighten($color: #e3e3e3, $amount: 8%);
@@ -193,7 +194,7 @@
         color: white;
         font-weight: 400;
         position: absolute;
-        right: 50px;
+        right: 100px;
       }
     }
   }

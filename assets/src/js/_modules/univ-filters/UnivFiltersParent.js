@@ -28,6 +28,7 @@ class UniversityFiltersParent {
     // FOLLOWING WAS FOR BODY CLICK TO MAKE DROP DOWN MENU CLOSE
     // BUT IT WAS CAUSING ISSUES SO HAS BEEN COMMENTED OUT
     // this.doc.on('mouseup', this.docClick);
+    this.doc.on('scroll', this.docScroll);
 
     // THE FOLLOWING WILL REPLACE THE ABOVE. THIS IS A CLOSE BTN
     // WHICH WILL CLOSE THE ALL STATE DROPDOWN
@@ -38,13 +39,9 @@ class UniversityFiltersParent {
     this.dropDownBox.addClass('d-none');
   };
 
-  docClick = (e) => {
-    // console.log('doc mouse up');
-    // const dropDownBox = $('#menu-university-menu');
-    if (!this.dropDownBox.is(e.target)) {
-      // this.dropDownBox.removeClass('is-active');
-      this.dropDownBox.addClass('d-none');
-    }
+  docScroll = (e) => {
+    // console.log('scrolling...');
+    this.dropDownBox.addClass('d-none');
   };
 
   locationDropdownIn = (e) => {
@@ -76,6 +73,15 @@ class UniversityFiltersParent {
       theItem.removeClass('d-none');
     });
   }
+
+  // docClick = (e) => {
+  //   // console.log('doc mouse up');
+  //   // const dropDownBox = $('#menu-university-menu');
+  //   if (!this.dropDownBox.is(e.target)) {
+  //     // this.dropDownBox.removeClass('is-active');
+  //     this.dropDownBox.addClass('d-none');
+  //   }
+  // };
 }
 
 export default UniversityFiltersParent;
