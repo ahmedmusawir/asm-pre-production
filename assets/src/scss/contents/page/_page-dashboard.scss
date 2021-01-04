@@ -72,7 +72,7 @@
   #dashboard-task-board {
     // position: absolute;
 
-    background: url("/wp-content/uploads/Dashboard-header.jpg") center center;
+    background: url('/wp-content/uploads/Dashboard-header.jpg') center center;
     height: 450px;
     margin-top: 113px;
     padding: 3rem;
@@ -139,7 +139,7 @@
 
         // FONT AWESOME BUGFIX
         &::before {
-          content: "";
+          content: '';
         }
 
         h4 {
@@ -295,8 +295,9 @@
   // border: 1rem dotted red;
 
   #general-page-header {
+    // border: 1rem dotted red;
     position: fixed;
-    top: 80px;
+    top: 30px;
     z-index: 100;
     width: 100vw;
     height: 65px;
@@ -306,6 +307,7 @@
     margin-bottom: 30px;
 
     .top-page-menu {
+      // border: 1rem dotted red;
       .menu-title {
         padding-right: 2rem;
         padding-left: 2rem;
@@ -320,7 +322,7 @@
   // COACH'S TOP TASK BOX
   #dashboard-task-board {
     // border: 1rem dotted red;
-    background: url("/wp-content/uploads/athlete-header.jpg");
+    background: url('/wp-content/uploads/athlete-header.jpg');
     margin-top: 113px;
     padding: 3rem;
     padding-bottom: 6rem;

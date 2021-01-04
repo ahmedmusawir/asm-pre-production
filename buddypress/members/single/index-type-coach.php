@@ -7,7 +7,7 @@
  */
 get_header();
 ?>
-<div id="buddypress" class="buddypress-wrap coach bp-dir-hori-nav">
+<div id="buddypress-coach" class="buddypress-wrap coach bp-dir-hori-nav">
   <!-- FONT AWESOME 5 PRO -->
   <!-- <script src="https://kit.fontawesome.com/c8084101a0.js" crossorigin="anonymous"></script> -->
   <?php
