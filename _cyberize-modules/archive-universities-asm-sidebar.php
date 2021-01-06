@@ -5,8 +5,9 @@
  *
  */
 ?>
-
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCLPeaPHJFYJCR0xKMI-0aGPZpuc2aru8U"></script>
 <section id="" class="univ-index-block-asm">
+  <script src="<?php echo get_template_directory_uri(); ?>/assets/dist/js/GoogleMap.min.js"></script>
 
   <div id="primary" class="content-area">
     <main id="main" class="site-main">

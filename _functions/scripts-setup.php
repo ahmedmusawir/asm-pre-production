@@ -12,7 +12,7 @@
  */
 function cyberize_scripts() {
 	//CYBERIZE FRAMEWORK 1.0 STYLES UNIFIED & MINIFIED
-	wp_enqueue_style( 'cyberize-framework-1-main-style', get_template_directory_uri() . '/assets/dist/css/main.min.css', '', time() );
+	wp_enqueue_style( 'cyberize-framework-1-main-style', get_template_directory_uri() . '/assets/dist/css/main.min.css', '', '2.0' );
 	// wp_enqueue_style( 'cyberize-framework-1-main-style', get_template_directory_uri() . '/assets/dist/css/main.min.css', '', 12.0 );
 
 	//CYBERIZE FRAMEWORK 1.0 STYLES UNIFIED & MINIFIED
@@ -27,18 +27,18 @@ function cyberize_scripts() {
 	// wp_enqueue_script( 'cyberize-framework-1-bootstrap' , get_template_directory_uri() . '/assets/dist/js/bootstrap.bundle.min.js', array('jquery'), '20151215', true );
 	
 	//CYBERIZE FRAMEWORK 1.0 JAVASCRIPTS UNIFIED AND MINIFIED
-	wp_enqueue_script( 'cyberize-framework-1-script', get_template_directory_uri() . '/assets/dist/js/script.min.js', array('jquery'), time(), true );
-	// wp_enqueue_script( 'cyberize-framework-1-script', get_template_directory_uri() . '/assets/dist/js/script.min.js', array('jquery'), '20151215', true );
+	// wp_enqueue_script( 'cyberize-framework-1-script', get_template_directory_uri() . '/assets/dist/js/script.min.js', array('jquery'), time(), true );
+	wp_enqueue_script( 'cyberize-framework-1-script', get_template_directory_uri() . '/assets/dist/js/script.min.js', array('jquery'), '20151215', true );
 
 	//CYBERIZE FRAMEWORK 1.0 JAVASCRIPTS UNIFIED AND MINIFIED
 	// wp_enqueue_script( 'cyberize-framework-1-feather-light-js', get_template_directory_uri() . '/assets/dist/js/featherlight.min.js', array('jquery'), '20181105', true );
 
 
 //CYBERIZE FRAMEWORK GOOGLE MAP API KEY SETUP
-wp_enqueue_script( 'cyberize-framework-1-googlemap', 'https://maps.googleapis.com/maps/api/js?key=AIzaSyCLPeaPHJFYJCR0xKMI-0aGPZpuc2aru8U', NULL, '20190504', true );
+// wp_enqueue_script( 'cyberize-framework-1-googlemap', 'https://maps.googleapis.com/maps/api/js?key=AIzaSyCLPeaPHJFYJCR0xKMI-0aGPZpuc2aru8U', NULL, '20190504', true );
 
 //CYBERIZE FRAMEWORK 1.0 BASE JS SCRIPTS
-wp_enqueue_script( 'cyberize-framework-1-acfGoogleMap', get_template_directory_uri() . '/assets/dist/js/GoogleMap.min.js', array('jquery'), '20190504', true );
+// wp_enqueue_script( 'cyberize-framework-1-acfGoogleMap', get_template_directory_uri() . '/assets/dist/js/GoogleMap.min.js', array('jquery'), '20190504', true );
 
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {

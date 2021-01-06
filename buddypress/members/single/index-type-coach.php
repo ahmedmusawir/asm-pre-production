@@ -73,26 +73,26 @@ get_header();
 
       <ul class="list-inline menu-box">
         <a href="#top-video-section">
-          <li class="list-inline-item"><img class="img-icon" src="/wp-content/uploads/video-icon.png" alt="">
+          <li class="list-inline-item"><img class="img-icon" src="/wp-content/uploads/video-icon-1.png" alt="">
             <span class="btn-text">Video</span>
           </li>
         </a>
         <a href="#about-section">
           <!-- <li class="list-inline-item"><i class="fad fa-user-circle"></i>Bio</li> -->
-          <li class="list-inline-item"><img class="img-icon" src="/wp-content/uploads/bio-icon-2.png" alt="">
+          <li class="list-inline-item"><img class="img-icon" src="/wp-content/uploads/bio-icon-3.png" alt="">
             <span class="btn-text">Bio</span>
           </li>
         </a>
         <a href="#academics-section">
           <!-- <li class="list-inline-item"><i class="fad fa-file-certificate"></i>Academics</li> -->
-          <li class="list-inline-item"><img class="img-icon" src="/wp-content/uploads/academics-icon-1.png" alt="">
+          <li class="list-inline-item"><img class="img-icon" src="/wp-content/uploads/awards-icon-1.png" alt="">
             <span class="btn-text">University</span>
           </li>
         </a>
         <a href="#instagram-section">
           <!-- <li class="list-inline-item"><i class="fab fa-instagram"></i>Instagram</li> -->
           <li class="list-inline-item"><img class="img-icon" style="padding-top: .1rem;"
-              src="/wp-content/uploads/images-icon.png" alt="">
+              src="/wp-content/uploads/academics-icon-2.png" alt="">
             <span class="btn-text">Instagram</span>
           </li>
         </a>
