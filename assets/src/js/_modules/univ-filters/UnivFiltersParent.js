@@ -18,7 +18,7 @@ class UniversityFiltersParent {
   }
 
   init = () => {
-    console.log('Univ Parent Filter Reset');
+    // console.log('Univ Parent Filter Reset');
   };
 
   setEvents() {
@@ -40,13 +40,10 @@ class UniversityFiltersParent {
   };
 
   docScroll = (e) => {
-    // console.log('scrolling...');
     this.dropDownBox.addClass('d-none');
   };
 
   locationDropdownIn = (e) => {
-    console.log('location btn clicked');
-    // this.dropDownBox.addClass('is-active row');
     this.dropDownBox.removeClass('d-none');
   };
 

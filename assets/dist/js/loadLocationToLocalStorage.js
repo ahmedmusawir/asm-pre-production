@@ -2,6 +2,7 @@ jQuery(function ($) {
   var ajaxUrl = asmGlobals1.ajaxUrl;
   var ajaxFunction = 'athlete_dynamic_location_ajax_function';
   var buttonLocationSelect = $('#location-select');
+  var buttonAdvLocationSelect = $('#location-select-adv');
 
   var localLocations = JSON.parse(localStorage.getItem('localLocations'));
 
@@ -27,4 +28,5 @@ jQuery(function ($) {
   }
 
   buttonLocationSelect.append(localLocations);
+  buttonAdvLocationSelect.append(localLocations);
 });

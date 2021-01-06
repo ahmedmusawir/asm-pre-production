@@ -30,51 +30,46 @@ function load_asm_globals() {
   
   wp_localize_script('ASM-GLOBAL-2', 'asmGlobals2', array(
     'ajaxUrl' => admin_url( 'admin-ajax.php' ),
-  ));  
-}
-add_action('after_setup_theme', 'load_asm_globals');
-
-// ASM DYNAMIC FILTER LOADER
-function load_asm_dynamic_filter_scripts() {
-  // LOCATION FILTER SCRIPT
-	wp_enqueue_script( 
-		'asm-locations-filter-script', 
-		get_template_directory_uri() . '/assets/dist/js/loadASMLocationFiltersWithLocalStorage.js', 
-		array('jquery'), 
-		'2015121X', 
-		false 
-  );
+  ));
   
-  // SPORTS FILTER SCRIPT
   wp_enqueue_script( 
-		'asm-sports-filter-script', 
-		get_template_directory_uri() . '/assets/dist/js/loadASMSportsFiltersWithLocalStorage.js', 
-		array('jquery'), 
-		'2015121Y', 
-		false
-  );
-
-  // UNIVERSITY WOMEN'S SPORTS FILTER SCRIPT
-  wp_enqueue_script( 
-    'unv-womens-sports-filter-script', 
+    'ASM-GLOBAL-3', 
     get_template_directory_uri() . '/assets/dist/js/loadUnivWomenSportsFromLocalStorage.js', 
     array('jquery'), 
-    '2020121X', 
-    false
+    '2015121X', 
+    false 
   );
   
-  // UNIVERSITY MEN'S SPORTS FILTER SCRIPT
+  wp_localize_script('ASM-GLOBAL-3', 'asmGlobals3', array(
+    'ajaxUrl' => admin_url( 'admin-ajax.php' ),
+  ));
+
   wp_enqueue_script( 
-		'unv-mens-sports-filter-script', 
-		get_template_directory_uri() . '/assets/dist/js/loadUnivMenSportsFromLocalStorage.js', 
-		array('jquery'), 
-		'2015121Y', 
-		false
+    'ASM-GLOBAL-4', 
+    get_template_directory_uri() . '/assets/dist/js/loadUnivMenSportsFromLocalStorage.js', 
+    array('jquery'), 
+    '2015121X', 
+    false 
   );
   
+  wp_localize_script('ASM-GLOBAL-4', 'asmGlobals4', array(
+    'ajaxUrl' => admin_url( 'admin-ajax.php' ),
+  ));
+
+  wp_enqueue_script( 
+    'ASM-GLOBAL-5', 
+    get_template_directory_uri() . '/assets/dist/js/putAthleteCountToLocalStorage.js', 
+    array('jquery'), 
+    '2015121X', 
+    false 
+  );
+  
+  wp_localize_script('ASM-GLOBAL-5', 'asmGlobals5', array(
+    'ajaxUrl' => admin_url( 'admin-ajax.php' ),
+  ));
 
 }
-// add_action('wp_enqueue_scripts', 'load_asm_dynamic_filter_scripts');
+add_action('after_setup_theme', 'load_asm_globals');
 
 /**
  * LOG OUT REDIRECTION TO HOME

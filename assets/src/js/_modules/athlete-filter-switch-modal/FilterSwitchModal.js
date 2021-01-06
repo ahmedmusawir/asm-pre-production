@@ -30,23 +30,24 @@ class FilterSwitchModal extends AdvanceFiltersParentHelper {
     // console.log('Filter Switch Modal ...');
     // COLLECTING SPORTS ITEMS FROM THE LOCAL STORAGE
     const rawSportsData = localStorage.getItem('localSports');
-    const sportStrArr1 = rawSportsData.split('\\');
+    if (rawSportsData) {
+      const sportStrArr1 = rawSportsData.split('\\');
+      // console.log(rawSportsData);
 
-    // console.log(rawSportsData);
-
-    sportStrArr1.map((item) => {
-      // Remove all entries with 'option' in them
-      if (!item.includes('option')) {
-        const newItem = item.substr(1); // Remove first char for the string
-        // GENERATING HTML - RADIO BUTTONS
-        const newRadioBtn = `
+      sportStrArr1.map((item) => {
+        // Remove all entries with 'option' in them
+        if (!item.includes('option')) {
+          const newItem = item.substr(1); // Remove first char for the string
+          // GENERATING HTML - RADIO BUTTONS
+          const newRadioBtn = `
         <label class="sports-radio-item">
           <input type="radio" name="sportsRadioAdvFilter" value="${newItem}">
           ${newItem}
         </label><br>`;
-        this.radioBtnBox.append(newRadioBtn);
-      }
-    });
+          this.radioBtnBox.append(newRadioBtn);
+        }
+      });
+    }
   };
 
   setEvents = () => {

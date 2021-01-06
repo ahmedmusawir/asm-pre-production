@@ -99,8 +99,10 @@ require get_template_directory() . '/_functions/athlete-loadmore-function.php';
 // The new Loaction filters loading into LocalStorage
 require get_template_directory() . '/_functions/asm-functions/ajax/athlete-dynamic-location-ajax-function.php';
 require get_template_directory() . '/_functions/asm-functions/ajax/athlete-dynamic-sports-ajax-function.php';
-require get_template_directory() . '/_functions/univ-men-sports-ajax-function.php';
-require get_template_directory() . '/_functions/univ-women-sports-ajax-function.php';
+require get_template_directory() . '/_functions/asm-functions/ajax/univ-men-sports-ajax-function.php';
+require get_template_directory() . '/_functions/asm-functions/ajax/univ-women-sports-ajax-function.php';
+require get_template_directory() . '/_functions/asm-functions/ajax/get-athlete-count-by-sports.php';
+
 
 /**
  * ASM WOOCOM FUNCTIONS

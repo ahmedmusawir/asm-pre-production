@@ -1,7 +1,6 @@
-jQuery(document).ready(function ($) {
-  // console.log('Location Select Clicked');
+jQuery(function ($) {
   var selectBtn = $('#men-select');
-  var ajaxUrl = selectBtn.data('url');
+  var ajaxUrl = asmGlobals3.ajaxUrl;
   var ajaxFunction = 'univ_men_sports_ajax_function';
 
   var mensSportsArray = JSON.parse(localStorage.getItem('mensSports'));
