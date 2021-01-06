@@ -1,9 +1,7 @@
 jQuery(function ($) {
-  // console.log('Location Select Clicked');
-  var selectBtn = $('#location-select');
-  var selectAdvBtn = $('#location-select-adv');
-  var ajaxUrl = selectBtn.data('url');
+  var ajaxUrl = asmGlobals1.ajaxUrl;
   var ajaxFunction = 'athlete_dynamic_location_ajax_function';
+  var buttonLocationSelect = $('#location-select');
 
   var localLocations = JSON.parse(localStorage.getItem('localLocations'));
 
@@ -16,20 +14,17 @@ jQuery(function ($) {
       },
     })
       .done(function (res) {
-        $('#location-select').append(res);
         var locationArray = res;
         // console.log(locationArray);
-
         localStorage.setItem('localLocations', JSON.stringify(locationArray));
       })
       .fail(function () {
         console.log('Ajax Failed! In ' + ajaxFunction);
       })
       .always(function () {
-        // console.log('Ajax Dynamic Loaction Filter Complete');
+        // console.log('New Ajax Loaction Filter Complete');
       });
   }
 
-  selectBtn.append(localLocations);
-  selectAdvBtn.append(localLocations);
+  buttonLocationSelect.append(localLocations);
 });

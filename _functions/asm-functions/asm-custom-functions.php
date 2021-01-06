@@ -8,23 +8,31 @@
  */
 function load_asm_globals() {
 
-  if ( is_front_page() ) {
-   
-    wp_enqueue_script( 
-      'ASM-GLOBAL', 
-      get_template_directory_uri() . '/assets/dist/js/loadASMFiltersToLocalStorage.js', 
-      array('jquery'), 
-      '2015121X', 
-      false 
-    );
-    
-  }
+  wp_enqueue_script( 
+    'ASM-GLOBAL-1', 
+    get_template_directory_uri() . '/assets/dist/js/loadLocationToLocalStorage.js', 
+    array('jquery'), 
+    '2015121X', 
+    false 
+  );
   
-  wp_localize_script('ASM-GLOBAL', 'asmGlobals', array(
+  wp_localize_script('ASM-GLOBAL-1', 'asmGlobals1', array(
+    'ajaxUrl' => admin_url( 'admin-ajax.php' ),
+  ));  
+
+  wp_enqueue_script( 
+    'ASM-GLOBAL-2', 
+    get_template_directory_uri() . '/assets/dist/js/loadSportsToLocalStorage.js', 
+    array('jquery'), 
+    '2015121X', 
+    false 
+  );
+  
+  wp_localize_script('ASM-GLOBAL-2', 'asmGlobals2', array(
     'ajaxUrl' => admin_url( 'admin-ajax.php' ),
   ));  
 }
-add_action('wp_enqueue_scripts', 'load_asm_globals');
+add_action('after_setup_theme', 'load_asm_globals');
 
 // ASM DYNAMIC FILTER LOADER
 function load_asm_dynamic_filter_scripts() {
@@ -66,7 +74,7 @@ function load_asm_dynamic_filter_scripts() {
   
 
 }
-add_action('wp_enqueue_scripts', 'load_asm_dynamic_filter_scripts');
+// add_action('wp_enqueue_scripts', 'load_asm_dynamic_filter_scripts');
 
 /**
  * LOG OUT REDIRECTION TO HOME

@@ -27,7 +27,7 @@ class FilterSwitchModal extends AdvanceFiltersParentHelper {
   }
 
   init = () => {
-    console.log('Filter Switch Modal ...');
+    // console.log('Filter Switch Modal ...');
     // COLLECTING SPORTS ITEMS FROM THE LOCAL STORAGE
     const rawSportsData = localStorage.getItem('localSports');
     const sportStrArr1 = rawSportsData.split('\\');

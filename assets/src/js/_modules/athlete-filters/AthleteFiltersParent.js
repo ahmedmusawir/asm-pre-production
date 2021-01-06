@@ -2,7 +2,7 @@ import $ from 'jquery';
 
 class AthleteFiltersParent {
   constructor() {
-    // this.init();
+    this.init();
 
     // COLLECTING RESET BUTTON
     this.buttonReset = $('#ath-filter-reset');
@@ -27,9 +27,6 @@ class AthleteFiltersParent {
     if (this.buttonReset) {
       this.buttonReset.on('click', this.resetFilters);
     }
-    // if (this.buttonAdvFilter) {
-    //   this.buttonAdvFilter.on('click', this.openAdvanceFilter);
-    // }
   }
 
   openAdvanceFilter(e) {
