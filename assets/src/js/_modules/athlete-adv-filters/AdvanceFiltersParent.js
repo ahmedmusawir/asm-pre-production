@@ -2,7 +2,7 @@ import $ from 'jquery';
 
 class AdvanceFiltersParent {
   constructor() {
-    this.init();
+    // this.init();
   }
 
   init = () => {
@@ -75,9 +75,10 @@ class AdvanceFiltersParent {
     //   setTimeout(function () {
     //     $(`.${sport}`).removeClass('d-none');
     //   });
-    // } else 
-    
-    if ( // SET OF 9 STARTS HERE ABCDEFGHI
+    // } else
+
+    if (
+      // SET OF 9 STARTS HERE ABCDEFGHI
       A != 'all' &&
       B != 'all' &&
       C != 'all' &&
@@ -4320,7 +4321,6 @@ class AdvanceFiltersParent {
       });
     }
   };
-
 }
 
 export default AdvanceFiltersParent;

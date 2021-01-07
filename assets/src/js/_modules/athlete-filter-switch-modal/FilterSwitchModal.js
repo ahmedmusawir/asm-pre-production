@@ -91,6 +91,11 @@ class FilterSwitchModal extends AdvanceFiltersParentHelper {
   }
 
   loadSportsBasedFilters(sport) {
+    // COUNT CONTAINER
+    const countContainer = $('p.pag-data');
+    // COLLECTING ATHLETE COUNT BY SPORTS
+    const athleteCountData = JSON.parse(localStorage.getItem('athleteCount'));
+    // REMOVING BASE FILTERS
     $('.menu-box-sports').addClass('d-none');
     super.resetFilters();
 
@@ -100,93 +105,165 @@ class FilterSwitchModal extends AdvanceFiltersParentHelper {
       case 'US-FOOTBALL':
         // console.log(`Sport Filters for ${sport}`);
         $(`.menu-box-${sport}`).removeClass('d-none');
-        // code block
+        //Display Athlete Count by Sport
+        if (athleteCountData) {
+          const athCount = athleteCountData[0][sport];
+          countContainer.html(`${athCount} Athletes found with ${sport}`);
+        }
         break;
       case 'BASEBALL':
         // console.log(`Sport Filters for ${sport}`);
         $(`.menu-box-${sport}`).removeClass('d-none');
-        // code block
+        //Display Athlete Count by Sport
+        if (athleteCountData) {
+          const athCount = athleteCountData[0][sport];
+          countContainer.html(`${athCount} Athletes found with ${sport}`);
+        }
         break;
       case 'BASKETBALL':
         // console.log(`Sport Filters for ${sport}`);
         $(`.menu-box-${sport}`).removeClass('d-none');
-        // code block
+        //Display Athlete Count by Sport
+        if (athleteCountData) {
+          const athCount = athleteCountData[0][sport];
+          countContainer.html(`${athCount} Athletes found with ${sport}`);
+        }
         break;
       case 'CHEERLEADING':
         // console.log(`Sport Filters for ${sport}`);
         $(`.menu-box-${sport}`).removeClass('d-none');
-        // code block
+        //Display Athlete Count by Sport
+        if (athleteCountData) {
+          const athCount = athleteCountData[0][sport];
+          countContainer.html(`${athCount} Athletes found with ${sport}`);
+        }
         break;
       case 'GOLF':
         // console.log(`Sport Filters for ${sport}`);
         $(`.menu-box-${sport}`).removeClass('d-none');
-        // code block
+        //Display Athlete Count by Sport
+        if (athleteCountData) {
+          const athCount = athleteCountData[0][sport];
+          countContainer.html(`${athCount} Athletes found with ${sport}`);
+        }
         break;
       case 'FIELD-HOCKEY':
         // console.log(`Sport Filters for ${sport}`);
         $(`.menu-box-${sport}`).removeClass('d-none');
-        // code block
+        //Display Athlete Count by Sport
+        if (athleteCountData) {
+          const athCount = athleteCountData[0][sport];
+          countContainer.html(`${athCount} Athletes found with ${sport}`);
+        }
         break;
       case 'GYMNASTICS':
         // console.log(`Sport Filters for ${sport}`);
         $(`.menu-box-${sport}`).removeClass('d-none');
-        // code block
+        //Display Athlete Count by Sport
+        if (athleteCountData) {
+          const athCount = athleteCountData[0][sport];
+          countContainer.html(`${athCount} Athletes found with ${sport}`);
+        }
         break;
       case 'ICE-HOCKEY':
         // console.log(`Sport Filters for ${sport}`);
         $(`.menu-box-${sport}`).removeClass('d-none');
-        // code block
+        //Display Athlete Count by Sport
+        if (athleteCountData) {
+          const athCount = athleteCountData[0][sport];
+          countContainer.html(`${athCount} Athletes found with ${sport}`);
+        }
         break;
       case 'LACROSSE':
         // console.log(`Sport Filters for ${sport}`);
         $(`.menu-box-${sport}`).removeClass('d-none');
-        // code block
+        //Display Athlete Count by Sport
+        if (athleteCountData) {
+          const athCount = athleteCountData[0][sport];
+          countContainer.html(`${athCount} Athletes found with ${sport}`);
+        }
         break;
       case 'ROWING':
         // console.log(`Sport Filters for ${sport}`);
         $(`.menu-box-${sport}`).removeClass('d-none');
-        // code block
+        //Display Athlete Count by Sport
+        if (athleteCountData) {
+          const athCount = athleteCountData[0][sport];
+          countContainer.html(`${athCount} Athletes found with ${sport}`);
+        }
         break;
       case 'RUGBY':
         // console.log(`Sport Filters for ${sport}`);
         $(`.menu-box-${sport}`).removeClass('d-none');
-        // code block
+        //Display Athlete Count by Sport
+        if (athleteCountData) {
+          const athCount = athleteCountData[0][sport];
+          countContainer.html(`${athCount} Athletes found with ${sport}`);
+        }
         break;
       case 'SOCCER':
         // console.log(`Sport Filters for ${sport}`);
         $(`.menu-box-${sport}`).removeClass('d-none');
-        // code block
+        //Display Athlete Count by Sport
+        if (athleteCountData) {
+          const athCount = athleteCountData[0][sport];
+          countContainer.html(`${athCount} Athletes found with ${sport}`);
+        }
         break;
       case 'SOFTBALL':
         // console.log(`Sport Filters for ${sport}`);
         $(`.menu-box-${sport}`).removeClass('d-none');
-        // code block
+        //Display Athlete Count by Sport
+        if (athleteCountData) {
+          const athCount = athleteCountData[0][sport];
+          countContainer.html(`${athCount} Athletes found with ${sport}`);
+        }
         break;
       case 'SWIMMING-AND-DIVING':
         // console.log(`Sport Filters for ${sport}`);
         $(`.menu-box-${sport}`).removeClass('d-none');
-        // code block
+        //Display Athlete Count by Sport
+        if (athleteCountData) {
+          const athCount = athleteCountData[0][sport];
+          countContainer.html(`${athCount} Athletes found with ${sport}`);
+        }
         break;
       case 'VOLLEYBALL':
         // console.log(`Sport Filters for ${sport}`);
         $(`.menu-box-${sport}`).removeClass('d-none');
-        // code block
+        //Display Athlete Count by Sport
+        if (athleteCountData) {
+          const athCount = athleteCountData[0][sport];
+          countContainer.html(`${athCount} Athletes found with ${sport}`);
+        }
         break;
       case 'TRACK-AND-FIELD':
         // console.log(`Sport Filters for ${sport}`);
         $(`.menu-box-${sport}`).removeClass('d-none');
-        // code block
+        //Display Athlete Count by Sport
+        if (athleteCountData) {
+          const athCount = athleteCountData[0][sport];
+          countContainer.html(`${athCount} Athletes found with ${sport}`);
+        }
         break;
       case 'WATER-POLO':
         // console.log(`Sport Filters for ${sport}`);
         $(`.menu-box-${sport}`).removeClass('d-none');
-        // code block
+        //Display Athlete Count by Sport
+        if (athleteCountData) {
+          const athCount = athleteCountData[0][sport];
+          countContainer.html(`${athCount} Athletes found with ${sport}`);
+        }
         break;
 
       case 'TENNIS':
         // console.log(`Sport Filters for ${sport}`);
         $(`.menu-box-${sport}`).removeClass('d-none');
-        // code block
+        //Display Athlete Count by Sport
+        if (athleteCountData) {
+          const athCount = athleteCountData[0][sport];
+          countContainer.html(`${athCount} Athletes found with ${sport}`);
+        }
         break;
       default:
       // code block

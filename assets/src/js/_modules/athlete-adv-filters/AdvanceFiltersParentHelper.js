@@ -47,8 +47,12 @@ class AdvanceFilterParentHelper extends AdvanceFiltersParent {
   }
 
   removeAdvFilters() {
-    console.log('Remove Adv Filters');
-    // e.stopImmediatePropagation();
+    // RESETTING THE ATHLETE COUNT MESSAGE
+    const originalTotalAthleteCountText = sessionStorage.getItem(
+      'originalAthCountText'
+    );
+    // console.log(originalTotalAthleteCountText);
+    $('p.pag-data').html(originalTotalAthleteCountText);
 
     // GOING BACK TO BASE FILTERS MENU
     const athAdvfilter = $('#top-advanced-filter');
@@ -58,7 +62,6 @@ class AdvanceFilterParentHelper extends AdvanceFiltersParent {
   }
 
   resetFilters() {
-    // console.log('reset - coming from Adv Filter Parent ... ');
     // BASE FILTERS RESET
     const theItem = $('.item-entry-asm');
 

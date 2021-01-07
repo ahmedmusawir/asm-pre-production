@@ -985,3 +985,24 @@
 </div>
 
 <!-- SPORTS CHOICE MODAL FOR ADVANCE FILER END -->
+
+<!-- COLLECTING ORIGINAL ATHLETE COUNT TEXT -->
+<script src="<?php echo get_template_directory_uri(); ?>/assets/dist/js/arrive.min.js"></script>
+<script>
+jQuery(function($) {
+  $(document).arrive("p.pag-data", function() {
+    // 'this' refers to the newly created element
+    var athCountBox = $(this);
+    // console.log(athCountBox);
+    // COLLECTING ORIGINAL COUNT MESSAGE BY BP
+    var originalTotalAthleteCountText = athCountBox.text().trim();
+    // console.log(originalTotalAthleteCountText);
+    sessionStorage.setItem(
+      'originalAthCountText',
+      originalTotalAthleteCountText
+    );
+  });
+
+});
+</script>
+<!-- END COLLECTING ORIGINAL ATHLETE COUNT TEXT -->

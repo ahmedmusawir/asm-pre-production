@@ -4,10 +4,11 @@ class AthleteFiltersParent {
   constructor() {
     this.init();
 
-    // COLLECTING RESET BUTTON
+    // COLLECTING ELEMENTS
     this.buttonReset = $('#ath-filter-reset');
     this.buttonAdvFilter = $('#ath-advance-filter');
 
+    // SET EVENTS ETC.
     this.showNoDataFound();
     this.setEvents();
   }
@@ -29,6 +30,17 @@ class AthleteFiltersParent {
     }
   }
 
+  storeOriginalAthCount = () => {
+    // COUNT CONTAINER
+    const countContainer = $('p.pag-data');
+    // COLLECTING ORIGINAL COUNT MESSAGE BY BP
+    const originalTotalAthleteCountText = countContainer.text().trim();
+    sessionStorage.setItem(
+      'originalAthCountText',
+      originalTotalAthleteCountText
+    );
+  };
+
   openAdvanceFilter(e) {
     // console.log('adv fltr clicked');
     e.stopImmediatePropagation();
@@ -38,6 +50,14 @@ class AthleteFiltersParent {
   }
 
   resetFilters() {
+    // RESETTING THE ATHLETE COUNT MESSAGE
+    const originalTotalAthleteCountText = sessionStorage.getItem(
+      'originalAthCountText'
+    );
+    // console.log(originalTotalAthleteCountText);
+    $('p.pag-data').html(originalTotalAthleteCountText);
+
+    // RESETTING THE FILTERS
     const theItem = $('.item-entry-asm');
 
     const sport = $('#sports-select');
