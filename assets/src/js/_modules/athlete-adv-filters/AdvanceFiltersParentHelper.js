@@ -61,8 +61,11 @@ class AdvanceFilterParentHelper extends AdvanceFiltersParent {
     this.resetBaseFilters();
   }
 
+  // RESET ADVANCE FILTERS
   resetFilters() {
-    // BASE FILTERS RESET
+    // FILTERS RESET IN THE BASE FILTER PAGE
+    this.resetBaseFilters();
+    // FILTERS RESET IN THE ADV FILTER PAGE
     const theItem = $('.item-entry-asm');
 
     const sport = $('.menu-title.sport-title').text();
@@ -190,6 +193,34 @@ class AdvanceFilterParentHelper extends AdvanceFiltersParent {
     theItem.addClass('d-none');
     setTimeout(function () {
       $(`.${sport}`).removeClass('d-none');
+    });
+  }
+  // RESET BASE FILTERS WITH ADV FILTER BACK BUTTON
+  resetBaseFilters() {
+    // RESETTING THE FILTERS
+    const theItem = $('.item-entry-asm');
+
+    const sport = $('#sports-select');
+    sport.val('all');
+
+    const gender = $('#gender-select');
+    gender.val('all');
+
+    const avail = $('#avail-select');
+    avail.val('all');
+
+    const classYr = $('#class-year-select');
+    classYr.val('all');
+
+    const location = $('#location-select');
+    location.val('all');
+
+    const verify = $('#verify-select');
+    verify.val('all');
+
+    theItem.addClass('d-none');
+    setTimeout(function () {
+      theItem.removeClass('d-none');
     });
   }
 

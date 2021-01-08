@@ -1,11 +1,12 @@
 /**
  * ITEM INDEX
- * 1. ATHLETE & COACH SINGLE PROFILE
+ * 1. ATHLETE SINGLE PROFILE
  *  1a. ATHLETE PROFILE RIGHT EMAIL BUTTONS
+ *  2. COACH SINGLE PROFILE
  *  2a. ATHLETE VIEW COUNT BOX ON RIGHT SIDEBAR
  *  3. LARGE NEW PROFILE HEADER
  *  4. ATHLETE COMMITTED BOX IN PROFILE HEADER
- * 2. ATHLETE & COACH INDEX
+ * 
  * 3. BP GLOBAL SEARCH INDEX
  * 4. BP REGISTRATION PAGE
  */
@@ -204,12 +205,6 @@ body.buddypress {
       url('/wp-content/uploads/athlete-header.jpg');
     background-position: center top;
 
-    // @media (max-width: 1500px) {
-    //   margin-top: 50px;
-    // }
-    @media (max-width: 1366px) {
-      margin-top: 75px;
-    }
     @media (max-width: 1350px) {
       margin-top: -30px;
     }
@@ -244,14 +239,11 @@ body.buddypress {
       @media (max-width: 1500px) {
         margin-top: 30px;
       }
-      @media (max-width: 1366px) {
-        margin-top: 30px;
-      }
-      @media (max-width: 1024px) {
-        padding-top: 1rem;
-        // border: 5px dotted blue;
+      @media (max-width: 1350px) {
+        margin-top: 0px;
       }
       @media (max-width: 800px) {
+        // border: 5px dotted blue;
         margin-top: 2rem;
       }
       @media (max-width: 500px) {
@@ -265,14 +257,12 @@ body.buddypress {
         display: block;
         margin: auto;
 
-        // @media (max-width: 1250px) {
-        //   width: 50% !important;
-        // }
         @media (max-width: 1024px) {
           width: 65% !important;
         }
         @media (max-width: 874px) {
           width: 75% !important;
+          margin-top: 2rem;
         }
         @media (max-width: 420px) {
           width: 95% !important;
@@ -568,11 +558,12 @@ body.buddypress {
                 font-weight: 700;
               }
 
-              @media (max-width: 427px) {
+              // @media (max-width: 427px) {
+              @media (max-width: 600px) {
                 margin-top: 1.5rem;
-                font-size: 2rem;
+                font-size: 1.5rem;
                 small {
-                  font-size: 1rem;
+                  font-size: 0.8rem;
                 }
               }
             }
@@ -1194,60 +1185,6 @@ body.buddypress {
   // 2a. ATHLETE VIEW COUNT BOX ON RIGHT SIDEBAR
   // MOVED TO PROJECT GLOBALS - _asm-globals.scss
   // #athlete-view-count-box {
-  //   // border: 4px dotted red;
-  //   .view-count-title {
-  //     font-size: 1.5rem;
-  //     font-weight: 700;
-  //     margin-top: 2rem;
-  //     margin-bottom: 0;
-  //   }
-
-  //   margin-bottom: 2rem;
-  //   .box-content {
-  //     // border: 4px dotted blue;
-  //     box-shadow: 1px 1px 5px gray;
-  //     padding: 0;
-  //     margin: 0;
-  //     margin-bottom: 1rem;
-
-  //     .versity-logo {
-  //       img {
-  //         width: 80px;
-  //         margin-top: 1rem;
-  //       }
-  //     }
-
-  //     .text-content {
-  //       padding: 0;
-  //       margin: 0;
-
-  //       .icon-text-box {
-  //         background-color: darken($color: #4b5ec1, $amount: 10%);
-  //         border: 1px solid darken($color: #4b5ec1, $amount: 10%);
-  //         // CSS BUG FIX
-  //         .icon-text {
-  //           &::before {
-  //             content: "";
-  //           }
-  //           color: white;
-  //           text-align: center;
-  //           font-size: 1rem;
-  //           font-weight: 700;
-  //           font-family: $primary-font;
-  //         }
-  //       }
-
-  //       .text-only-box {
-  //         border: 1px solid #e7e7e7;
-  //         background-color: #e7e7e7;
-  //         .text-only {
-  //           text-align: center;
-  //           font-size: 0.8rem;
-  //           font-weight: 700;
-  //         }
-  //       }
-  //     }
-  //   }
   // }
 }
 
@@ -1365,7 +1302,7 @@ body.buddypress {
             font-size: 0.8rem;
             font-weight: 700;
           }
-          @media (max-width: 1350px) {
+          @media (min-width: 451px) {
             margin-bottom: 1.5rem;
           }
         }
@@ -1382,6 +1319,23 @@ body.buddypress {
           @media (max-width: 1350px) {
             background-color: white;
             margin-left: 0.25rem;
+          }
+          @media (max-width: 450px) {
+            padding: 0.25rem 1rem;
+            margin-left: 0;
+            -webkit-appearance: button;
+            font-size: 14px;
+            background: white;
+            margin-bottom: 0.15rem;
+            border-radius: 20px !important;
+            .img-icon {
+              display: none;
+            }
+            .btn-text {
+              font-size: 0.8rem;
+              font-weight: 700;
+              padding-right: 1rem;
+            }
           }
           @media (max-width: 375px) {
             margin-left: 0.5rem;
@@ -1404,27 +1358,29 @@ body.buddypress {
     // background-size: 100%;
 
     @media (max-width: 1350px) {
+      // border: 4px dotted red;
       margin-top: -40px;
     }
     @media (max-width: 544px) {
       margin-top: 16px;
     }
-    // @media (max-width: 889px) {
-    //   top: 157px;
-    //   height: 150px;
-    // }
-    // @media (max-width: 559px) {
-    //   top: 203px;
-    // }
+
     .athlete-img-box {
       // border: 4px dotted red;
-      // display: none;
-      margin-top: 20px;
-      @media (max-width: 1500px) {
-        margin-top: 20px;
+      padding-top: 15px;
+
+      @media (min-width: 1351px) {
+        padding-top: 30px;
+      }
+      @media (max-width: 1350px) {
+        // border: 4px dotted red;
+        margin-top: -15px;
       }
       @media (max-width: 800px) {
-        margin-top: 10px;
+        margin-top: -25px;
+      }
+      @media (max-width: 544px) {
+        margin-top: 30px;
       }
 
       img {
@@ -1434,9 +1390,6 @@ body.buddypress {
         display: block;
         margin: auto;
 
-        // @media (max-width: 1250px) {
-        //   width: 50% !important;
-        // }
         @media (max-width: 1024px) {
           width: 65% !important;
         }
@@ -1461,6 +1414,13 @@ body.buddypress {
     .title-box {
       border-bottom: 3px solid white;
       // width: 50%;
+      @media (max-width: 1350px) {
+        // border: 4px dotted red;
+        margin-top: -40px;
+      }
+      @media (max-width: 544px) {
+        margin-top: 10px;
+      }
 
       // ATHLETE'S TITLE
       .athlete-title {
@@ -1485,21 +1445,21 @@ body.buddypress {
             font-size: 0.8rem;
           }
         }
-        @media (min-width: 767px) and (max-width: 900px) {
-          font-size: 1.2rem;
-          small {
-            display: block;
-          }
-        }
-        @media (min-width: 501px) and (max-width: 594px) {
-          margin-top: -1.5rem;
-        }
-        @media (max-width: 500px) {
-          padding-top: 1.8rem;
-          small {
-            display: block;
-          }
-        }
+        // @media (min-width: 767px) and (max-width: 900px) {
+        //   font-size: 1.2rem;
+        //   small {
+        //     display: block;
+        //   }
+        // }
+        // @media (min-width: 501px) and (max-width: 594px) {
+        //   margin-top: -1.5rem;
+        // }
+        // @media (max-width: 500px) {
+        //   padding-top: 1.8rem;
+        //   small {
+        //     display: block;
+        //   }
+        // }
       }
 
       // COACH'S TITLE

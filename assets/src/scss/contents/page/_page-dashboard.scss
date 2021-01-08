@@ -125,12 +125,20 @@
         }
       }
       .text-box {
+        // border: 5px dotted red;
         border-right: 1px solid darken($color: #e3e3e3, $amount: 10%);
-        // border-top: 1px solid darken($color: #e3e3e3, $amount: 10%);
         padding: 2rem;
 
         h3 {
           font-weight: 700;
+          @media (min-width: 1600px) {
+            // border: 5px dotted blue;
+            margin-top: 1.5rem;
+          }
+          @media (min-width: 1700px) {
+            // border: 5px dotted blue;
+            margin-top: 2.5rem;
+          }
         }
       }
       .icon-box {
@@ -155,6 +163,13 @@
           font-size: 3rem;
           font-weight: 700;
           color: $cg-primary;
+
+          @media (min-width: 1500px) {
+            font-size: 4.5rem;
+          }
+          @media (min-width: 1700px) {
+            margin-top: 1.5rem;
+          }
         }
       }
     }

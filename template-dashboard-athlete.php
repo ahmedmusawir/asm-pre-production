@@ -135,11 +135,13 @@ get_header(); ?>
 
             </a>
           </div>
-          <div class="col-sm-6 text-center text-box">
-            <h3 class="title"><?php the_sub_field('middle_box_title'); ?></h3>
-            <p class="sub-title">
-              <?php the_sub_field('middle_box_subtitle'); ?>
-            </p>
+          <div class="col-sm-6 text-box">
+            <article class="text-only text-center">
+              <h3 class="title"><?php the_sub_field('middle_box_title'); ?></h3>
+              <p class="sub-title">
+                <?php the_sub_field('middle_box_subtitle'); ?>
+              </p>
+            </article>
           </div>
           <div id="<?php the_sub_field('task_id'); ?>" class="col-sm-3 text-center icon-box">
             <h4 class="status-text <?php the_sub_field('task_id'); ?>">

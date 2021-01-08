@@ -39,7 +39,7 @@ function asm_get_loggedin_profile_view($user_id, $current_user) {
     $user_obj->roles[1] = null;
   } 
 
-  $user_role = $user_obj->roles[1];
+  $user_role = $user_obj->roles[0];
 
   // CHECKING FOR COACH VIEWS
   if ( $user_role == 'coach') :

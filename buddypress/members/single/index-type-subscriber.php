@@ -5,24 +5,7 @@
  * @since   1.0.0
  * @version 3.0.0
  */
-
-$user_id = bp_displayed_user_id();
-$current_user = wp_get_current_user();
-$current_user_id = $current_user->ID;
-
-if (!is_user_logged_in() && ($user_id != $current_user_id)) {
-  echo '<h1 class="pt-5 mt-5">You cannot see this page ...</h1>';
-  wp_die();
-  // wp_redirect( home_url() ); exit;
-}  
-
-if (is_user_logged_in() && ($user_id != $current_user_id)) {
-  echo '<h1 class="pt-5 mt-5">You cannot see this page ...</h1>';
-  wp_die();
-}
-
 get_header();
-
 ?>
 <div id="buddypress" class="buddypress-wrap coach bp-dir-hori-nav">
   <!-- FONT AWESOME 5 PRO -->
@@ -70,11 +53,11 @@ get_header();
     <section class="top-page-menu clearfix">
 
       <h3 class="menu-title float-left">Profile</h3>
-      <?php //if (is_user_logged_in() && ($user_id == $current_user_id)) : ?>
+      <?php if (is_user_logged_in() && ($user_id == $current_user_id)) : ?>
 
       <!-- <h3 id="edit-athlete-profile-button" class="menu-title float-right">Edit Profile</h3> -->
 
-      <?php //endif; ?>
+      <?php endif; ?>
 
     </section>
   </div>
@@ -92,7 +75,6 @@ get_header();
       </h3>
 
       <?php endif; ?>
-
 
       <ul class="list-inline menu-box">
         <a href="#top-video-section">
@@ -138,14 +120,17 @@ get_header();
 
   <div class="bp-wrap">
     <section id="large-profile-header">
+      <!-- ================================================================================================== -->
+      <!-- THE FOLLOWING DISAPPEARS AT 767px -->
+      <!-- ================================================================================================== -->
+      <div class="container-fluid d-none d-md-block">
 
-      <div class="container-fluid">
         <div class="row">
 
           <!-- ATHLETE AVATAR IMAGE -->
-          <article class="col-4 col-md-3">
+          <!-- <article class="col-4 col-md-3"> -->
+          <article class="col-md-3">
             <div>
-              <!-- <a href="<?php //bp_displayed_user_link(); ?>"> -->
 
               <div class="athlete-img-box text-center">
 
@@ -153,12 +138,12 @@ get_header();
 
               </div>
 
-              <!-- </a> -->
             </div><!-- #item-header-avatar -->
           </article>
 
           <!-- ATHLETE NAME - VIEW COUNT - VARIFICATION -->
-          <article class="col-7 col-md-5">
+          <!-- <article class="col-6 col-md-5"> -->
+          <article class="col-md-5">
 
             <div class="title-box">
               <h1 class="athlete-title">
@@ -193,7 +178,7 @@ get_header();
           </article>
 
           <!-- ATHLETE COMMITTED - UNIVERSITY NAME - UNIVERSITY LOGO -->
-          <article class="col-1 col-md-4">
+          <article class="col-md-4">
 
 
             <?php if ( !$committed_status || $committed_status == 'yes') : ?>
@@ -209,7 +194,6 @@ get_header();
 
                   <div class="univ-logo">
                     <img class="" src="<?php echo $committed_university_logo; ?>" alt="">
-                    <!-- <img class="" src="/wp-content/uploads/stanforduniversity-california-logo.jpg" alt=""> -->
                   </div>
 
                 </div>
@@ -218,7 +202,6 @@ get_header();
                   <header class="committed-text">
                     <h4 class="text">Committed</h4>
                     <h5 class="univ-name"><?php echo $committed_university_name; ?></h5>
-                    <!-- <h5 class="univ-name">Stanford University</h5> -->
                   </header>
 
                 </div>
@@ -230,10 +213,67 @@ get_header();
 
           </article>
 
+        </div>
+
+      </div> <!-- container-fluid ends for LARGE SCREENS -->
+
+      <!-- ================================================================================================== -->
+      <!-- THE FOLLOWING DISPLAYS ONLY AT 767px & SMALLER SCREENS -->
+      <!-- ================================================================================================== -->
+      <div class="d-block d-md-none">
+        <div class="athlete-profile-header-mobile-container">
+
+          <div id="flex-container">
+            <!-- ATHLETE AVATAR IMAGE -->
+            <article class="athlete-mobile-image-box">
+              <div>
+
+                <div class="athlete-mobile-img-box text-center">
+
+                  <?php bp_displayed_user_avatar( 'type=full' ); ?>
+
+                </div>
+
+              </div><!-- #item-header-avatar -->
+            </article>
+
+            <!-- ATHLETE NAME - VIEW COUNT - VARIFICATION -->
+            <article class="athlete-mobile-content-box">
+
+              <div class="title-mobile-box">
+                <h1 class="athlete-title">
+
+                  <?php echo bp_core_get_user_displayname( $user_id, true ); ?>
+
+                  <small>(<?php echo $sport; ?>)</small>
+
+                </h1>
+              </div>
+
+              <section class="athlete-mobile-meta">
+                <?php 
+                $total_profile_visit = visitors_get_profile_visit_count($user_id);
+              ?>
+
+                <ul class="athlete-meta-check d-inline">
+                  <?php echo $v_result; ?>
+                </ul>
+                <ul class="athlete-meta-eye d-inline">
+                  <li class="d-inline meta-icon">
+                    <i class="fas fa-eye"></i>
+                  </li>
+                  <li class="d-inline meta-text">
+                    <span class="text"><?php echo $total_profile_visit; ?>&nbsp; Views</span>
+                  </li>
+                </ul>
+
+              </section>
+            </article>
+          </div>
+
 
         </div>
       </div>
-
     </section> <!-- END OF id="large-profile-header" -->
 
     <div id="item-body" class="item-body row">
