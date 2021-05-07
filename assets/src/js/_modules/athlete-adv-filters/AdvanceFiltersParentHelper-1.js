@@ -58,10 +58,7 @@ class AdvanceFilterParentHelper extends AdvanceFiltersParent {
     const athAdvfilter = $('#top-advanced-filter');
     athAdvfilter.addClass('d-none');
     // RESETTING TO ALL SPORTS
-    // this.resetBaseFilters();
-    const theItem = $('.item-entry-asm');
-    theItem.removeAttr('style');
-    theItem.removeClass('d-none');
+    this.resetBaseFilters();
   }
 
   // RESET ADVANCE FILTERS

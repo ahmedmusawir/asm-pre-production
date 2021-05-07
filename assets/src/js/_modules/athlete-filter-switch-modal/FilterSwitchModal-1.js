@@ -84,7 +84,12 @@ class FilterSwitchModal extends AdvanceFiltersParentHelper {
     // LOAD DATA ACCORDING TO SPORT CHOSEN
     // Adding .d-none stopped working, so had to use .css
     const theItem = $('.item-entry-asm');
+    // theItem.css('display', 'none');
+    // theItem.addClass('display-none');
     theItem.css('display', 'none');
+
+    // theItem.addClass('d-none');
+    // theItem.addClass('d-none alert alert-danger d-none');
 
     setTimeout(function () {
       $(`.${sportChoice}`).removeClass('d-none');
