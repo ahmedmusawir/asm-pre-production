@@ -43,7 +43,7 @@
       .icon-text-box {
         background-color: darken($color: #4b5ec1, $amount: 10%);
         // background: linear-gradient(lighten(#4b5ec1, 15%), #4b5ec1);
-        border: 1px solid darken($color: #4b5ec1, $amount: 10%);
+        // border: 1px solid darken($color: #4b5ec1, $amount: 10%);
         padding-left: 1.5rem;
         padding-top: 0.15rem;
         padding-bottom: 0.15rem;
@@ -51,7 +51,7 @@
         // CSS BUG FIX
         .icon-text {
           &::before {
-            content: '';
+            content: "";
           }
           color: white;
           text-align: left;

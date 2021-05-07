@@ -14,7 +14,7 @@
 
   function new_map($el) {
     // var
-    var $markers = $el.find('.marker');
+    var $markers = $el.find(".marker");
 
     // vars
     var args = {
@@ -59,8 +59,8 @@
   function add_marker($marker, map) {
     // var
     var latlng = new google.maps.LatLng(
-      $marker.attr('data-lat'),
-      $marker.attr('data-lng')
+      $marker.attr("data-lat"),
+      $marker.attr("data-lng")
     );
 
     // create marker
@@ -80,7 +80,7 @@
       });
 
       // show info window when marker is clicked
-      google.maps.event.addListener(marker, 'click', function () {
+      google.maps.event.addListener(marker, "click", function () {
         infowindow.open(map, marker);
       });
     }
@@ -142,7 +142,7 @@
   var map = null;
 
   $(document).ready(function () {
-    $('.acf-map').each(function () {
+    $(".acf-map").each(function () {
       // $('.google-map-innerbox').each(function () {
       // create map
       map = new_map($(this));

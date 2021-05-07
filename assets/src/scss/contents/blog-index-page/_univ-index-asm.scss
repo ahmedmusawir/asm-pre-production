@@ -49,11 +49,12 @@
       border-bottom: 2px solid lighten($color: gray, $amount: 35%);
 
       .menu-title {
+        margin-top: 0.7rem;
         padding-right: 2rem;
         padding-left: 2rem;
         padding-top: 1.3rem;
         font-size: 1.3rem;
-        font-weight: 700;
+        font-weight: 600;
         color: $cg-primary;
         @media (max-width: 888px) {
           display: none;
@@ -73,6 +74,10 @@
           }
         }
 
+        @media (max-width: 1273px) {
+          margin-top: 1.9rem;
+        }
+
         // THE LOCATION MENU DROPDOWN
         #menu-university-menu {
           border: 2px solid #e3e3e3;
@@ -84,7 +89,6 @@
           position: absolute;
           top: 40px;
           left: 120px;
-          // display: none;
 
           li {
             list-style: none;
@@ -116,19 +120,31 @@
           background-color: white;
           border: 1px solid gray;
           border-radius: 6px;
-          padding: 0.5rem;
+          // padding: 0.5rem;
+          padding: 0.75rem 2rem;
           color: lighten($color: $cg-primary, $amount: 10%);
           font-size: 0.7rem;
           font-weight: 600;
           text-transform: uppercase;
 
+          &:hover {
+            border: 2px solid lighten($color: indianred, $amount: 0%);
+            // background-color: #e3e3e3;
+          }
+          &:focus {
+            outline: $cg-primary;
+          }
+
           option {
             font-family: $primary-font !important;
           }
-
-          @media (max-width: 1073px) {
-            margin-bottom: 1rem;
+          @media (max-width: 1273px) {
+            padding: 0.25rem 1rem;
+            margin-bottom: 0.5rem;
           }
+          // @media (max-width: 1073px) {
+          //   margin-bottom: 1rem;
+          // }
           @media (max-width: 699px) {
             padding: 0.35rem;
             font-size: 0.6rem;
@@ -137,7 +153,8 @@
         }
 
         #univ-filter-reset {
-          padding: 0.55rem 2rem;
+          // padding: 0.55rem 2rem;
+          padding: 0.75rem 2rem;
           margin-left: 0.5rem;
           border: 1px solid gray;
           border-radius: 6px;
@@ -145,6 +162,16 @@
           font-size: 0.7rem;
           font-weight: 600;
 
+          &:hover {
+            border: 2px solid lighten($color: indianred, $amount: 0%);
+            // background-color: #e3e3e3;
+          }
+          &:focus {
+            outline: $cg-primary;
+          }
+          @media (max-width: 1273px) {
+            padding: 0.25rem 1rem;
+          }
           @media (max-width: 699px) {
             padding: 0.45rem;
             font-size: 0.6rem;
@@ -194,7 +221,7 @@
         color: white;
         font-weight: 400;
         position: absolute;
-        right: 100px;
+        right: 70px;
       }
     }
   }
@@ -207,11 +234,17 @@
     .post-item-container {
       position: relative;
 
+      @media (max-width: 1129px) {
+        margin-top: 2rem;
+      }
       @media (max-width: 772px) {
         margin-top: 1rem;
       }
-      @media (max-width: 424px) {
+      @media (max-width: 490px) {
         margin-top: 2rem;
+      }
+      @media (max-width: 463px) {
+        margin-top: 2.5rem;
       }
 
       .no-data-found {
@@ -353,8 +386,18 @@
           align-items: flex-end;
 
           .detail-link {
-            // border: 2px dotted green;
+            // border: 5px dotted green;
             margin-top: 1rem;
+
+            span {
+              border: 1px solid white;
+              padding: 0.5rem 1rem;
+              font-size: 0.9rem !important;
+              background: linear-gradient(
+                lighten($cg-primary, 50%),
+                $cg-primary
+              ) !important;
+            }
           }
           .university-logo {
             img {

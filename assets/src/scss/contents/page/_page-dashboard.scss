@@ -72,7 +72,7 @@
   #dashboard-task-board {
     // position: absolute;
 
-    background: url('/wp-content/uploads/Dashboard-header.jpg') center center;
+    background: url("/wp-content/uploads/Dashboard-header.jpg") center center;
     height: 450px;
     margin-top: 113px;
     padding: 3rem;
@@ -147,12 +147,13 @@
 
         // FONT AWESOME BUGFIX
         &::before {
-          content: '';
+          content: "";
         }
 
         h4 {
           padding: 1rem;
-          background-color: lighten($color: $cg-primary, $amount: 15%);
+          background-color: $cg-secondary;
+          // background-color: lighten($color: $cg-primary, $amount: 15%);
           font-size: 1rem;
           font-weight: 700;
           color: white;
@@ -177,6 +178,7 @@
 
   // ATHLETE DASHBOARD SIDEBAR
   #asm-dashboard-sidebar {
+    // border: 3px dotted red;
     padding-right: 3rem;
     @media (max-width: 991px) {
       padding-right: 15px;
@@ -185,12 +187,22 @@
     // ATHLETE VIEW COUND WIDGET CUSTOMIZATION FOR 4 COL WIDHT
     // THE ONE AT THE PROJECT GLOBAL IS FOR 3 COL WIDTH
     #athlete-view-count-box {
+      margin-left: -5px;
       .text-content {
+        // border: 10px dotted green;
         .icon-text-box {
           padding: 0.5rem;
+          .icon-text {
+            padding-top: 0.7rem;
+            padding-left: 1rem;
+          }
         }
         .text-only-box {
           padding: 0.5rem;
+          .text-only {
+            padding-top: 0.7rem;
+            padding-left: 1rem;
+          }
         }
       }
     }
@@ -205,12 +217,13 @@
     flex-wrap: wrap;
     // border: 3px dotted dodgerblue;
     .btn {
-      width: 48%;
+      width: 100%;
       padding-top: 1rem;
       padding-bottom: 1rem;
       border-radius: 0;
       font-weight: 800;
       background: linear-gradient(lighten(crimson, 15%), darken(crimson, 10%));
+      margin-right: 7px;
     }
 
     // RESPONSIVE
@@ -222,18 +235,18 @@
     }
   }
   #bottom-task-box {
-    justify-content: space-around;
+    justify-content: space-between;
     margin-top: 1rem;
 
     .task-box {
-      width: 270px;
+      width: 290px;
       // border: 3px dotted dodgerblue;
       background-color: lighten($color: #e3e3e3, $amount: 5%);
       margin-bottom: 1.5rem;
       margin-right: 0.5rem;
       padding-top: 1.5rem;
       padding-bottom: 1.5rem;
-      // border: 1rem dotted dodgerblue;
+      margin-left: 1px;
 
       i {
         font-size: 2.5rem;
@@ -256,26 +269,46 @@
         padding: 1rem 2rem;
         margin-top: 2rem;
         margin-bottom: 1rem;
-        width: 200px;
+        width: 220px;
         border-radius: 0;
         background-color: lighten($color: #0277bb, $amount: 10%);
+        font-weight: 800;
+        font-size: 1.1rem;
       }
 
       // RESPONSIVE
-      @media (max-width: 1827px) {
-        width: 220px;
+      @media (max-width: 1863px) {
+        width: 270px;
+      }
+      @media (max-width: 1743px) {
+        width: 260px;
+      }
+      @media (max-width: 1683px) {
+        width: 250px;
+      }
+      @media (max-width: 1623px) {
+        width: 240px;
+      }
+      @media (max-width: 1563px) {
+        width: 230px;
       }
       @media (max-width: 1527px) {
         display: block;
-        width: 100%;
+        width: 97%;
         padding-top: 1rem;
         padding-bottom: 1rem;
+        margin-left: 6px;
       }
       @media (max-width: 991px) {
         display: block;
-        width: 48%;
+        // width: 100%;
+        width: 47%;
         padding-top: 1rem;
         padding-bottom: 1rem;
+        margin-left: 6px;
+      }
+      @media (max-width: 534px) {
+        width: 46%;
       }
       @media (max-width: 490px) {
         display: block;
@@ -337,7 +370,7 @@
   // COACH'S TOP TASK BOX
   #dashboard-task-board {
     // border: 1rem dotted red;
-    background: url('/wp-content/uploads/athlete-header.jpg');
+    background: url("/wp-content/uploads/athlete-header.jpg");
     margin-top: 113px;
     padding: 3rem;
     padding-bottom: 6rem;

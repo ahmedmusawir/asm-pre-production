@@ -90,20 +90,78 @@
 
     .footer-flex-item {
       padding: 1rem;
-      width: 200px;
+      width: 350px;
+      @media (max-width: 1800px) {
+        width: 300px;
+      }
+      @media (max-width: 1620px) {
+        width: 270px;
+      }
+      @media (max-width: 1520px) {
+        width: 200px;
+      }
       @media (max-width: 379px) {
         width: 100%;
+        padding-left: 3rem !important;
       }
     }
     .footer-flex-col-1 {
-      width: 150px;
+      width: 350px;
+      padding-left: 4rem;
+      @media (max-width: 1260px) {
+        width: 200px;
+      }
+
       @media (max-width: 379px) {
-        width: 80%;
+        width: 50%;
         margin: auto;
+        padding-left: 0rem !important;
+      }
+    }
+    .footer-flex-col-2 {
+      @media (max-width: 1170px) {
+        width: 300px;
+      }
+      @media (max-width: 499px) {
+        padding-left: 6rem;
+      }
+      @media (max-width: 400px) {
+        padding-left: 6rem;
+        width: 300px;
+      }
+    }
+    .footer-flex-col-3 {
+      @media (max-width: 1170px) {
+        width: 300px;
+      }
+
+      @media (max-width: 800px) {
+        padding-left: 6rem;
+        width: 300px;
+      }
+    }
+    .footer-flex-col-4 {
+      @media (max-width: 1170px) {
+        width: 300px;
+      }
+
+      @media (max-width: 1099px) {
+        padding-left: 6rem;
+        width: 300px;
       }
     }
     .footer-flex-col-5 {
       width: 300px;
+      @media (max-width: 1170px) {
+        width: 400px;
+        padding-left: 5rem;
+      }
+      @media (max-width: 800px) {
+        padding-left: 6rem;
+      }
+      @media (max-width: 379px) {
+        padding-left: 1rem !important;
+      }
     }
 
     // THE 3RD COLUMN FOR SPORTS - LOWERING IT

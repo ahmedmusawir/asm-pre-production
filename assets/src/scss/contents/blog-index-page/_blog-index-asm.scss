@@ -151,9 +151,17 @@
           border: 1px solid gray;
           border-radius: 6px;
           color: lighten($color: $cg-primary, $amount: 10%);
-          font-size: 0.8rem;
+          font-size: 0.7rem;
           font-weight: 600;
           text-transform: uppercase;
+
+          &:hover {
+            border: 2px solid lighten($color: indianred, $amount: 0%);
+            // background-color: #e3e3e3;
+          }
+          &:focus {
+            outline: $cg-primary;
+          }
         }
       }
     }
@@ -176,7 +184,7 @@
         margin-left: 60px;
 
         &::before {
-          content: url('../../../assets/img/comment-icon.png');
+          content: url("../../../assets/img/comment-icon.png");
           display: inline-block;
           vertical-align: middle;
           padding-right: 30px;
