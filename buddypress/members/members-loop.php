@@ -396,7 +396,7 @@ bp_nouveau_before_loop(); ?>
                             <div class="text-content">
                                 <?php echo $excerpt; ?>
                                 <span class="readmore"><a href="<?php bp_member_permalink(); ?>">(View
-                                        Athlete...)</a></span>
+                                        Athlete)</a></span>
                             </div>
 
 

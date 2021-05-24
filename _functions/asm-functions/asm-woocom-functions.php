@@ -53,17 +53,8 @@ function asm_set_registered_coach_membership($user_id, $feed, $entry, $user_pass
   // GFCommon::log_debug( __METHOD__ . '(): entry => ' . print_r( $feed, true ) );
 }
 
-// GRAVITY FORM SUBMISSION
-// add_action( 'gform_after_submission', 'set_post_content', 10, 2 );
-// function set_post_content( $entry, $form ) {
- 
-//    GFCommon::log_debug( __METHOD__ . '(): entry => ' . print_r( $entry, true ) );
-//    GFCommon::log_debug( __METHOD__ . '(): form => ' . print_r( $form, true ) );
 
-// }
+// REMOVE ADDITIONAL INFO / ORDER NOTES SECTION
+// This is under woocommerce/checkout/form-shipping.php
 
- /**
- * @author        MOOSE
- * @compatible    WC 3.7
- */
-  
+add_filter('woocommerce_enable_order_notes_field', '__return_false', 9999);

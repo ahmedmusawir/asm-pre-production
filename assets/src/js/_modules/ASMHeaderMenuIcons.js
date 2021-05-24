@@ -21,7 +21,7 @@ class ASMHeaderMenuIcons {
 
   emailClickHandler(e) {
     // console.log('Email Icon was clicked');
-    window.location.href = '/athlete-email-inbox/';
+    window.location.href = '/chat-room/';
   }
 
   viewMouseEnterHandler(e) {

@@ -98,27 +98,27 @@ function display_visitor_list( $users_obj ) {
     if ( $user_role == 'coach') :
     ?>
 <div class="box-content row">
-  <figure class="versity-logo col-sm-5 d-flex justify-content-center align-items-center">
-    <a href="<?php echo $visitor_profile_link;  ?>">
-      <?php echo $versity_logo; ?>
-    </a>
-  </figure>
-  <article class="text-content col-sm-7">
-    <!-- <div class="icon-text-box bg-danger">
+    <figure class="versity-logo col-sm-5 d-flex justify-content-center align-items-center">
+        <a href="<?php echo $visitor_profile_link;  ?>">
+            <?php echo $versity_logo; ?>
+        </a>
+    </figure>
+    <article class="text-content col-sm-7">
+        <!-- <div class="icon-text-box bg-danger">
       <h4 class="icon-text">
         <i class="fas fa-eye"></i> Viewed
       </h4>
     </div> -->
-    <?php echo $committed_result; ?>
+        <?php echo $committed_result; ?>
 
-    <div class="text-only-box">
-      <h5 class="text-only">
-        <!-- <?php //echo $versity_name; ?> Coaches viewed <br> -->
-        <?php //echo $current_user->display_name; ?>
-        <?php echo $current_user_proile_link; ?>
-      </h5>
-    </div>
-  </article>
+        <div class="text-only-box">
+            <h5 class="text-only">
+                <!-- <?php //echo $versity_name; ?> Coaches viewed <br> -->
+                <?php //echo $current_user->display_name; ?>
+                <?php echo $current_user_proile_link; ?>
+            </h5>
+        </div>
+    </article>
 </div>
 
 <?php endif; ?>
@@ -160,9 +160,9 @@ function get_asm_profile_views() {
 
 <section id="athlete-view-count-box">
 
-  <h2 class="view-count-title pb-3">Activity Feed</h2>
+    <h2 class="view-count-title pb-3">Activity Feed</h2>
 
-  <?php 
+    <?php 
 
   $visitors = array();
 

@@ -3,7 +3,6 @@ import ASMHeaderMenuIcons from './_modules/ASMHeaderMenuIcons';
 import ASMProfileEditMenu from './_modules/ASMProfileEditMenu';
 import ASMAthleteDashTasks from './_modules/ASMAthleteDashTasks';
 import ASMCoachDashboardSearch from './_modules/ASMCoachDashboardSearch';
-
 import AthleteFiltersParent from './_modules/athlete-filters/AthleteFiltersParent';
 import AthleteSportsFiltersSelect from './_modules/athlete-filters/AthleteSportsFiltersSelect';
 import AthleteGenderFiltersSelect from './_modules/athlete-filters/AthleteGenderFiltersSelect';

@@ -8,9 +8,9 @@
 get_header();
 ?>
 <div id="buddypress" class="buddypress-wrap coach bp-dir-hori-nav">
-  <!-- FONT AWESOME 5 PRO -->
-  <!-- <script src="https://kit.fontawesome.com/c8084101a0.js" crossorigin="anonymous"></script> -->
-  <?php
+    <!-- FONT AWESOME 5 PRO -->
+    <!-- <script src="https://kit.fontawesome.com/c8084101a0.js" crossorigin="anonymous"></script> -->
+    <?php
   
     $user_id = bp_displayed_user_id();
     $current_user = wp_get_current_user();
@@ -48,412 +48,416 @@ get_header();
 
   ?>
 
-  <div class="top-page-navbar">
+    <div class="top-page-navbar">
 
-    <section class="top-page-menu clearfix">
+        <section class="top-page-menu clearfix">
 
-      <h3 class="menu-title float-left">Profile</h3>
-      <?php if (is_user_logged_in() && ($user_id == $current_user_id)) : ?>
+            <h3 class="menu-title float-left">Profile</h3>
+            <?php if (is_user_logged_in() && ($user_id == $current_user_id)) : ?>
 
-      <!-- <h3 id="edit-athlete-profile-button" class="menu-title float-right">Edit Profile</h3> -->
+            <!-- <h3 id="edit-athlete-profile-button" class="menu-title float-right">Edit Profile</h3> -->
 
-      <?php endif; ?>
+            <?php endif; ?>
 
-    </section>
-  </div>
-  <div class="top-filter-navbar">
+        </section>
+    </div>
+    <div class="top-filter-navbar">
 
-    <section class="top-page-menu clearfix">
-      <h3 class="menu-title float-left">Filter</h3>
+        <section class="top-page-menu clearfix">
+            <h3 class="menu-title float-left">Filter</h3>
 
-      <!-- BLOCKING EDIT PROFILE BUTTON FROM SHOWING UP FOR NON LOGGED IN ATHLETES -->
-      <?php if (is_user_logged_in() && ($user_id == $current_user_id)) : ?>
+            <!-- BLOCKING EDIT PROFILE BUTTON FROM SHOWING UP FOR NON LOGGED IN ATHLETES -->
+            <?php if (is_user_logged_in() && ($user_id == $current_user_id)) : ?>
 
-      <h3 id="edit-athlete-profile-button" class="menu-title float-right">
-        Edit Profile &nbsp;
-        <i class="fas fa-pen-square"></i>
-      </h3>
+            <h3 id="edit-athlete-profile-button" class="menu-title float-right">
+                Edit Profile &nbsp;
+                <i class="fas fa-pen-square"></i>
+            </h3>
 
-      <?php endif; ?>
+            <?php endif; ?>
 
-      <ul class="list-inline menu-box">
-        <a href="#top-video-section">
-          <li class="list-inline-item"><img class="img-icon" src="/wp-content/uploads/video-icon-1.png" alt="">
-            <span class="btn-text">Video</span>
-          </li>
-        </a>
-        <a href="#about-section">
-          <!-- <li class="list-inline-item"><i class="fad fa-user-circle"></i>Bio</li> -->
-          <li class="list-inline-item"><img class="img-icon" src="/wp-content/uploads/bio-icon-3.png" alt="">
-            <span class="btn-text">Bio</span>
-          </li>
-        </a>
-        <a href="#sports-stats-section">
-          <!-- <li class="list-inline-item"><i class="fad fa-trophy-alt"></i></i>Sports Stats</li> -->
-          <li class="list-inline-item"><img class="img-icon" src="/wp-content/uploads/awards-icon-1.png" alt="">
-            <span class="btn-text">Sports Info</span>
-          </li>
-        </a>
-        <a href="#academics-section">
-          <!-- <li class="list-inline-item"><i class="fad fa-file-certificate"></i>Academics</li> -->
-          <li class="list-inline-item"><img class="img-icon" src="/wp-content/uploads/academics-icon-2.png" alt="">
-            <span class="btn-text">Academics</span>
-          </li>
-        </a>
-        <a href="#instagram-section">
-          <!-- <li class="list-inline-item"><i class="fab fa-instagram"></i>Instagram</li> -->
-          <li class="list-inline-item"><img class="img-icon" style="padding-top: .1rem;"
-              src="/wp-content/uploads/Instagram-icon.png" alt="">
-            <span class="btn-text">Instagram</span>
-          </li>
-        </a>
-        <a href="#interview-section">
-          <!-- <li class="list-inline-item"><i class="fad fa-comments"></i>Interviews</li> -->
-          <li class="list-inline-item"><img class="img-icon" src="/wp-content/uploads/Interviews-icon.png" alt="">
-            <span class="btn-text">Interviews</span>
-          </li>
-        </a>
-      </ul>
+            <ul class="list-inline menu-box">
+                <a href="#top-video-section">
+                    <li class="list-inline-item"><img class="img-icon" src="/wp-content/uploads/video-icon-1.png"
+                            alt="">
+                        <span class="btn-text">Video</span>
+                    </li>
+                </a>
+                <a href="#about-section">
+                    <!-- <li class="list-inline-item"><i class="fad fa-user-circle"></i>Bio</li> -->
+                    <li class="list-inline-item"><img class="img-icon" src="/wp-content/uploads/bio-icon-3.png" alt="">
+                        <span class="btn-text">Bio</span>
+                    </li>
+                </a>
+                <a href="#sports-stats-section">
+                    <!-- <li class="list-inline-item"><i class="fad fa-trophy-alt"></i></i>Sports Stats</li> -->
+                    <li class="list-inline-item"><img class="img-icon" src="/wp-content/uploads/awards-icon-1.png"
+                            alt="">
+                        <span class="btn-text">Sports Info</span>
+                    </li>
+                </a>
+                <a href="#academics-section">
+                    <!-- <li class="list-inline-item"><i class="fad fa-file-certificate"></i>Academics</li> -->
+                    <li class="list-inline-item"><img class="img-icon" src="/wp-content/uploads/academics-icon-2.png"
+                            alt="">
+                        <span class="btn-text">Academics</span>
+                    </li>
+                </a>
+                <a href="#instagram-section">
+                    <!-- <li class="list-inline-item"><i class="fab fa-instagram"></i>Instagram</li> -->
+                    <li class="list-inline-item"><img class="img-icon" style="padding-top: .1rem;"
+                            src="/wp-content/uploads/Instagram-icon.png" alt="">
+                        <span class="btn-text">Instagram</span>
+                    </li>
+                </a>
+                <a href="#interview-section">
+                    <!-- <li class="list-inline-item"><i class="fad fa-comments"></i>Interviews</li> -->
+                    <li class="list-inline-item"><img class="img-icon" src="/wp-content/uploads/Interviews-icon.png"
+                            alt="">
+                        <span class="btn-text">Interviews</span>
+                    </li>
+                </a>
+            </ul>
 
-    </section>
-  </div>
+        </section>
+    </div>
 
-  <div class="bp-wrap">
-    <section id="large-profile-header">
-      <!-- ================================================================================================== -->
-      <!-- THE FOLLOWING DISAPPEARS AT 767px -->
-      <!-- ================================================================================================== -->
-      <div class="container-fluid d-none d-md-block">
+    <div class="bp-wrap">
+        <section id="large-profile-header">
+            <!-- ================================================================================================== -->
+            <!-- THE FOLLOWING DISAPPEARS AT 767px -->
+            <!-- ================================================================================================== -->
+            <div class="container-fluid d-none d-md-block">
 
-        <div class="row">
+                <div class="row">
 
-          <!-- ATHLETE AVATAR IMAGE -->
-          <!-- <article class="col-4 col-md-3"> -->
-          <article class="col-md-3">
-            <div>
+                    <!-- ATHLETE AVATAR IMAGE -->
+                    <!-- <article class="col-4 col-md-3"> -->
+                    <article class="col-md-3">
+                        <div>
 
-              <div class="athlete-img-box text-center">
+                            <div class="athlete-img-box text-center">
 
-                <?php bp_displayed_user_avatar( 'type=full' ); ?>
+                                <?php bp_displayed_user_avatar( 'type=full' ); ?>
 
-              </div>
+                            </div>
 
-            </div><!-- #item-header-avatar -->
-          </article>
+                        </div><!-- #item-header-avatar -->
+                    </article>
 
-          <!-- ATHLETE NAME - VIEW COUNT - VARIFICATION -->
-          <!-- <article class="col-6 col-md-5"> -->
-          <article class="col-md-5">
+                    <!-- ATHLETE NAME - VIEW COUNT - VARIFICATION -->
+                    <!-- <article class="col-6 col-md-5"> -->
+                    <article class="col-md-5">
 
-            <div class="title-box">
-              <h1 class="athlete-title">
+                        <div class="title-box">
+                            <h1 class="athlete-title">
 
-                <?php echo bp_core_get_user_displayname( $user_id, true ); ?>
+                                <?php echo bp_core_get_user_displayname( $user_id, true ); ?>
 
-                <small>(<?php echo $sport; ?>)</small>
+                                <small>(<?php echo $sport; ?>)</small>
 
-              </h1>
-            </div>
+                            </h1>
+                        </div>
 
-            <section class="athlete-meta">
-              <?php 
+                        <section class="athlete-meta">
+                            <?php 
               $total_profile_visit = visitors_get_profile_visit_count($user_id);
               // $user_id = get_current_user_id();
               // $total_unique_visitors = visitors_get_unique_visitors_count( $user_id );
             ?>
 
-              <ul class="athlete-meta-check d-inline">
-                <?php echo $v_result; ?>
-              </ul>
-              <ul class="athlete-meta-eye d-inline">
-                <li class="d-inline meta-icon">
-                  <i class="fas fa-eye"></i>
-                </li>
-                <li class="d-inline meta-text">
-                  <span class="text"><?php echo $total_profile_visit; ?>&nbsp; Views</span>
-                </li>
-              </ul>
+                            <ul class="athlete-meta-check d-inline">
+                                <?php echo $v_result; ?>
+                            </ul>
+                            <ul class="athlete-meta-eye d-inline">
+                                <li class="d-inline meta-icon">
+                                    <i class="fas fa-eye"></i>
+                                </li>
+                                <li class="d-inline meta-text">
+                                    <span class="text"><?php echo $total_profile_visit; ?>&nbsp; Views</span>
+                                </li>
+                            </ul>
 
-            </section>
-          </article>
+                        </section>
+                    </article>
 
-          <!-- ATHLETE COMMITTED - UNIVERSITY NAME - UNIVERSITY LOGO -->
-          <article class="col-md-4">
+                    <!-- ATHLETE COMMITTED - UNIVERSITY NAME - UNIVERSITY LOGO -->
+                    <article class="col-md-4">
 
 
-            <?php if ( !$committed_status || $committed_status == 'yes') : ?>
+                        <?php if ( !$committed_status || $committed_status == 'yes') : ?>
 
-            <!-- PRINT NOTHING -->
+                        <!-- PRINT NOTHING -->
 
-            <?php else : ?>
+                        <?php else : ?>
 
-            <section class="athlete-committed-box">
+                        <section class="athlete-committed-box">
 
-              <div class="row">
-                <div class="col-sm-3">
+                            <div class="row">
+                                <div class="col-sm-3">
 
-                  <div class="univ-logo">
-                    <img class="" src="<?php echo $committed_university_logo; ?>" alt="">
-                  </div>
+                                    <div class="univ-logo">
+                                        <img class="" src="<?php echo $committed_university_logo; ?>" alt="">
+                                    </div>
 
-                </div>
-                <div class="col-sm-9">
+                                </div>
+                                <div class="col-sm-9">
 
-                  <header class="committed-text">
-                    <h4 class="text">Committed</h4>
-                    <h5 class="univ-name"><?php echo $committed_university_name; ?></h5>
-                  </header>
+                                    <header class="committed-text">
+                                        <h4 class="text">Committed</h4>
+                                        <h5 class="univ-name"><?php echo $committed_university_name; ?></h5>
+                                    </header>
 
-                </div>
-              </div>
+                                </div>
+                            </div>
 
-            </section>
+                        </section>
 
-            <?php endif; ?>
+                        <?php endif; ?>
 
-          </article>
-
-        </div>
-
-      </div> <!-- container-fluid ends for LARGE SCREENS -->
-
-      <!-- ================================================================================================== -->
-      <!-- THE FOLLOWING DISPLAYS ONLY AT 767px & SMALLER SCREENS -->
-      <!-- ================================================================================================== -->
-      <div class="d-block d-md-none">
-        <div class="athlete-profile-header-mobile-container">
-
-          <div id="flex-container">
-            <!-- ATHLETE AVATAR IMAGE -->
-            <article class="athlete-mobile-image-box">
-              <div>
-
-                <div class="athlete-mobile-img-box text-center">
-
-                  <?php bp_displayed_user_avatar( 'type=full' ); ?>
+                    </article>
 
                 </div>
 
-              </div><!-- #item-header-avatar -->
-            </article>
+            </div> <!-- container-fluid ends for LARGE SCREENS -->
 
-            <!-- ATHLETE NAME - VIEW COUNT - VARIFICATION -->
-            <article class="athlete-mobile-content-box">
+            <!-- ================================================================================================== -->
+            <!-- THE FOLLOWING DISPLAYS ONLY AT 767px & SMALLER SCREENS -->
+            <!-- ================================================================================================== -->
+            <div class="d-block d-md-none">
+                <div class="athlete-profile-header-mobile-container">
 
-              <div class="title-mobile-box">
-                <h1 class="athlete-title">
+                    <div id="flex-container">
+                        <!-- ATHLETE AVATAR IMAGE -->
+                        <article class="athlete-mobile-image-box">
+                            <div>
 
-                  <?php echo bp_core_get_user_displayname( $user_id, true ); ?>
+                                <div class="athlete-mobile-img-box text-center">
 
-                  <small>(<?php echo $sport; ?>)</small>
+                                    <?php bp_displayed_user_avatar( 'type=full' ); ?>
 
-                </h1>
-              </div>
+                                </div>
 
-              <section class="athlete-mobile-meta">
-                <?php 
+                            </div><!-- #item-header-avatar -->
+                        </article>
+
+                        <!-- ATHLETE NAME - VIEW COUNT - VARIFICATION -->
+                        <article class="athlete-mobile-content-box">
+
+                            <div class="title-mobile-box">
+                                <h1 class="athlete-title">
+
+                                    <?php echo bp_core_get_user_displayname( $user_id, true ); ?>
+
+                                    <small>(<?php echo $sport; ?>)</small>
+
+                                </h1>
+                            </div>
+
+                            <section class="athlete-mobile-meta">
+                                <?php 
                 $total_profile_visit = visitors_get_profile_visit_count($user_id);
               ?>
 
-                <ul class="athlete-meta-check d-inline">
-                  <?php echo $v_result; ?>
-                </ul>
-                <ul class="athlete-meta-eye d-inline">
-                  <li class="d-inline meta-icon">
-                    <i class="fas fa-eye"></i>
-                  </li>
-                  <li class="d-inline meta-text">
-                    <span class="text"><?php echo $total_profile_visit; ?>&nbsp; Views</span>
-                  </li>
-                </ul>
+                                <ul class="athlete-meta-check d-inline">
+                                    <?php echo $v_result; ?>
+                                </ul>
+                                <ul class="athlete-meta-eye d-inline">
+                                    <li class="d-inline meta-icon">
+                                        <i class="fas fa-eye"></i>
+                                    </li>
+                                    <li class="d-inline meta-text">
+                                        <span class="text"><?php echo $total_profile_visit; ?>&nbsp; Views</span>
+                                    </li>
+                                </ul>
 
-              </section>
-            </article>
-          </div>
+                            </section>
+                        </article>
+                    </div>
 
 
-        </div>
-      </div>
-    </section> <!-- END OF id="large-profile-header" -->
+                </div>
+            </div>
+        </section> <!-- END OF id="large-profile-header" -->
 
-    <div id="item-body" class="item-body row">
-      <!-- LEFT COLUMN START -->
-      <article class="left-col col-sm-12 col-md-12 col-lg-4 col-xl-3">
+        <div id="item-body" class="item-body row">
+            <!-- LEFT COLUMN START -->
+            <article class="left-col col-sm-12 col-md-12 col-lg-4 col-xl-3">
 
-        <!-- LEFT-INFO-BOX SECTION START -->
+                <!-- LEFT-INFO-BOX SECTION START -->
 
-        <section class="btn-box">
-          <div class="message-athlete">
-            <a href="/athlete-email-inbox/">
-              <img class="btn-img" src="/wp-content/uploads/mesage-athlete-icon-1.png" alt=""
-                class="message-athlete-btn">
-            </a>
-          </div>
-          <div class="more-athlete">
-            <a href="/members/type/athletes/">
-              <img class="btn-img" src="/wp-content/uploads/more-athletes-icon-1.png" alt=""
-                class="message-athlete-btn">
-            </a>
-          </div>
-        </section>
+                <section class="btn-box">
+                    <div class="message-athlete">
+                        <a href="/athlete-email-inbox/">
+                            <img class="btn-img" src="/wp-content/uploads/mesage-athlete-icon-1.png" alt=""
+                                class="message-athlete-btn">
+                        </a>
+                    </div>
+                    <div class="more-athlete">
+                        <a href="/members/type/athletes/">
+                            <img class="btn-img" src="/wp-content/uploads/more-athletes-icon-1.png" alt=""
+                                class="message-athlete-btn">
+                        </a>
+                    </div>
+                </section>
 
-        <?php 
+                <?php 
       
           get_template_part('/buddypress/members/single/_moose-template-parts/athlete-profile-left-info-box');
       
         ?>
 
-        <!-- LEFT-INFO-BOX SECTION END -->
+                <!-- LEFT-INFO-BOX SECTION END -->
 
-      </article>
-      <!-- LEFT COLUMN END -->
+            </article>
+            <!-- LEFT COLUMN END -->
 
-      <!-- CENTER COLUMN START -->
-      <article class="col-sm-12 col-md-12 col-lg-8 col-xl-6">
+            <!-- CENTER COLUMN START -->
+            <article class="col-sm-12 col-md-12 col-lg-8 col-xl-6">
 
-        <?php if (is_user_logged_in() && ($user_id == $current_user_id)) : ?>
-        <!-- SETTING UP EMAIL INBOX -->
-        <?php //echo do_shortcode('[front-end-pm]'); ?>
-        <!-- SETTING UP EMAIL INBOX END -->
-        <?php endif; ?>
+                <?php if (is_user_logged_in() && ($user_id == $current_user_id)) : ?>
+                <!-- SETTING UP EMAIL INBOX -->
+                <?php //echo do_shortcode('[front-end-pm]'); ?>
+                <!-- SETTING UP EMAIL INBOX END -->
+                <?php endif; ?>
 
-        <!-- THE EDIT MENU START -->
-        <?php if (is_user_logged_in() && ($user_id == $current_user_id)) : ?>
-        <!-- FOLLOWING IS USED FOR THE PROFILE EDIT FUNCTION ONLY -->
-        <section id="athlete-profile-edit-box" class="">
-          <?php bp_nouveau_member_template_part(); ?>
-        </section>
-        <?php endif; ?>
-        <!-- THE EDIT MENU END -->
+                <!-- THE EDIT MENU START -->
+                <?php if (is_user_logged_in() && ($user_id == $current_user_id)) : ?>
+                <!-- FOLLOWING IS USED FOR THE PROFILE EDIT FUNCTION ONLY -->
+                <section id="athlete-profile-edit-box" class="">
+                    <?php bp_nouveau_member_template_part(); ?>
+                </section>
+                <?php endif; ?>
+                <!-- THE EDIT MENU END -->
 
-        <?php //get_template_part( 'buddypress/members/single/parts/item-nav' ); ?>
-        <?php //get_template_part( 'buddypress/members/single/parts/item-subnav' ); ?>
+                <?php //get_template_part( 'buddypress/members/single/parts/item-nav' ); ?>
+                <?php //get_template_part( 'buddypress/members/single/parts/item-subnav' ); ?>
 
-        <!-- ---------------------------------------------->
+                <!-- ---------------------------------------------->
 
-        <!-- CUSTOM MOOSE MAGIC STARTS HERE FOR ATHLETE PROFILE  -->
+                <!-- CUSTOM MOOSE MAGIC STARTS HERE FOR ATHLETE PROFILE  -->
 
-        <!-- TOP VIDEO SECTION START -->
-        <?php 
+                <!-- TOP VIDEO SECTION START -->
+                <?php 
       get_template_part('/buddypress/members/single/_moose-template-parts/athlete-profile-video');
       ?>
 
-        <!-- TOP VIDEO SECTION END -->
+                <!-- TOP VIDEO SECTION END -->
 
-        <!-- ABOUT SECTION START -->
+                <!-- ABOUT SECTION START -->
 
-        <?php 
+                <?php 
       get_template_part('/buddypress/members/single/_moose-template-parts/athlete-profile-about');
       ?>
 
-        <!-- ABOUT SECTION END -->
+                <!-- ABOUT SECTION END -->
 
-        <!-- SPORTS STATS SECTION STARTS -->
+                <!-- SPORTS STATS SECTION STARTS -->
 
-        <?php 
+                <?php 
       get_template_part('/buddypress/members/single/_moose-template-parts/athlete-profile-sports-stats');
       ?>
 
-        <!-- SPORTS STATS SECTION END -->
+                <!-- SPORTS STATS SECTION END -->
 
-        <!-- ACADEMICS SECTION START -->
+                <!-- ACADEMICS SECTION START -->
 
-        <?php 
+                <?php 
       get_template_part('/buddypress/members/single/_moose-template-parts/athlete-profile-academics');
       ?>
 
-        <!-- ACADEMICS SECTION END -->
+                <!-- ACADEMICS SECTION END -->
 
-        <!-- INSTAGRAM SECTION -->
+                <!-- INSTAGRAM SECTION -->
 
-        <?php 
+                <?php 
       get_template_part('/buddypress/members/single/_moose-template-parts/athlete-profile-instagram');
       ?>
 
-        <!-- INSTAGRAM END -->
+                <!-- INSTAGRAM END -->
 
-        <!-- INTERVIEW SECTION START -->
+                <!-- INTERVIEW SECTION START -->
 
 
-        <?php 
+                <?php 
       get_template_part('/buddypress/members/single/_moose-template-parts/athlete-profile-interview');
       ?>
 
 
-        <!-- INTERVIEW SECTION END -->
+                <!-- INTERVIEW SECTION END -->
 
 
-        <!-- CUSTOM MOOSE MAGIC ENDS HERE FOR ATHLETE PROFILE  -->
+                <!-- CUSTOM MOOSE MAGIC ENDS HERE FOR ATHLETE PROFILE  -->
 
-      </article>
-      <!-- CENTER COLUMN END -->
+            </article>
+            <!-- CENTER COLUMN END -->
 
-      <!-- RIGHT COLUMN - SIDEBAR COLUMN STARTS -->
+            <!-- RIGHT COLUMN - SIDEBAR COLUMN STARTS -->
 
-      <article class="sidebar-col col-sm-12 col-md-12 col-lg-12 col-xl-3">
+            <article class="sidebar-col col-sm-12 col-md-12 col-lg-12 col-xl-3">
 
-        <!-- ATHLETE VIEW COUNT BOX ON RIGHT SIDEBAR START -->
-        <?php
+                <!-- ATHLETE VIEW COUNT BOX ON RIGHT SIDEBAR START -->
+                <?php
           $user_id = bp_displayed_user_id();
           $current_user = wp_get_current_user();
           $current_user_id = $current_user->ID;
         ?>
 
-        <section id="athlete-view-count-box">
+                <section id="athlete-view-count-box">
 
 
-          <?php if (is_user_logged_in() && ($user_id == $current_user_id)) : ?>
+                    <?php if (is_user_logged_in() && ($user_id == $current_user_id)) : ?>
+                    <!-- LOCATION OF THE FUNCTION: _functions/asm-functions/asm-get-loggedin-profile-views.php   -->
+                    <?php asm_get_loggedin_profile_view($user_id, $current_user); ?>
 
-          <?php asm_get_loggedin_profile_view($user_id, $current_user); ?>
+                    <?php else : ?>
 
-          <?php else : ?>
+                    <!-- ATHLETE VIEW COUNT BOX ON RIGHT SIDEBAR START -->
+                    <!-- LOCATION OF THE FUNCTION: _functions/asm-functions/asm-get-profile-views.php   -->
+                    <?php get_asm_profile_views(); ?>
 
-          <!-- ATHLETE VIEW COUNT BOX ON RIGHT SIDEBAR START -->
+                    <!-- ATHLETE VIEW COUNT BOX ON RIGHT SIDEBAR END -->
 
-          <?php get_asm_profile_views(); ?>
+                    <?php endif; ?>
+                    <!-- End if (is_user_logged_in())  -->
 
-          <!-- ATHLETE VIEW COUNT BOX ON RIGHT SIDEBAR END -->
+                    <!-- ATHLETE VIEW COUNT BOX ON RIGHT SIDEBAR END -->
 
-          <?php endif; ?>
-          <!-- End if (is_user_logged_in())  -->
+                    <!-- THE SIDEBAR -->
+                    <div class="sidebar-area mt-5">
+                        <?php get_sidebar('custom'); ?>
+                    </div>
 
-          <!-- ATHLETE VIEW COUNT BOX ON RIGHT SIDEBAR END -->
+            </article>
 
-          <!-- THE SIDEBAR -->
-          <div class="sidebar-area mt-5">
-            <?php get_sidebar('custom'); ?>
-          </div>
+        </div><!-- #item-body -->
 
-      </article>
+    </div><!-- // .bp-wrap -->
 
-    </div><!-- #item-body -->
-
-  </div><!-- // .bp-wrap -->
-
-  <?php bp_nouveau_member_hook( 'after', 'home_content' ); ?>
+    <?php bp_nouveau_member_hook( 'after', 'home_content' ); ?>
 
 </div> <!-- #buddyPress Ends -->
 
 <script>
 (function($, window) {
-  var adjustAnchor = function() {
+    var adjustAnchor = function() {
 
-    var $anchor = $(':target'),
-      fixedElementHeight = 270;
+        var $anchor = $(':target'),
+            fixedElementHeight = 270;
 
-    if ($anchor.length > 0) {
+        if ($anchor.length > 0) {
 
-      $('html, body')
-        .stop()
-        .animate({
-          scrollTop: $anchor.offset().top - fixedElementHeight
-        }, 200);
-    }
-  };
+            $('html, body')
+                .stop()
+                .animate({
+                    scrollTop: $anchor.offset().top - fixedElementHeight
+                }, 200);
+        }
+    };
 
-  $(window).on('hashchange load', function() {
-    adjustAnchor();
-  });
+    $(window).on('hashchange load', function() {
+        adjustAnchor();
+    });
 
 })(jQuery, window);
 </script>

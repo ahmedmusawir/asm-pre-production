@@ -3,7 +3,7 @@
 function asm_get_loggedin_profile_view($user_id, $current_user) {
 ?>
 
-<h2 class="view-count-title pb-3">Activity Feed</h2>
+<h2 class="view-count-title pb-3">Coaches Who Viewed You</h2>
 
 <?php 
   $users_obj = visitors_get_recent_visitors( get_current_user_id(), $count = 5 );
@@ -45,23 +45,23 @@ function asm_get_loggedin_profile_view($user_id, $current_user) {
   if ( $user_role == 'coach') :
   ?>
 <div class="box-content row">
-  <figure class="versity-logo col-sm-5 d-flex justify-content-center align-items-center">
-    <?php echo $versity_logo; ?>
-  </figure>
-  <article class="text-content col-sm-7">
-    <div class="icon-text-box">
-      <h4 class="icon-text">
-        <i class="fas fa-eye"></i> Viewed
-      </h4>
-    </div>
-    <div class="text-only-box">
-      <h5 class="text-only">
-        <?php echo $versity_name; ?> viewed <br>
-        <?php //print_r($current_user); ?>
-        <?php echo  $current_user->display_name; ?>
-      </h5>
-    </div>
-  </article>
+    <figure class="versity-logo col-sm-5 d-flex justify-content-center align-items-center">
+        <?php echo $versity_logo; ?>
+    </figure>
+    <article class="text-content col-sm-7">
+        <div class="icon-text-box">
+            <h4 class="icon-text">
+                <i class="fas fa-eye"></i> Viewed
+            </h4>
+        </div>
+        <div class="text-only-box">
+            <h5 class="text-only">
+                <?php echo $versity_name; ?> viewed <br>
+                <?php //print_r($current_user); ?>
+                <?php echo  $current_user->display_name; ?>
+            </h5>
+        </div>
+    </article>
 </div>
 
 <?php endif; ?>

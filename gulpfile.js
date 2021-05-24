@@ -36,13 +36,13 @@ function styles(done) {
     .pipe(
       scss({
         errorLogToConsole: true,
-        outputStyle: 'compressed'
+        outputStyle: 'compressed',
       })
     )
     .on('error', console.error.bind(console))
     .pipe(
       autoprefixer({
-        overrideBrowserslist: ['last 2 versions', '> 5%', 'Firefox ESR']
+        overrideBrowserslist: ['last 2 versions', '> 5%', 'Firefox ESR'],
       })
     )
     .pipe(rename({ suffix: '.min' }))
@@ -78,9 +78,9 @@ var jsFILES = [jsSRC, googleMapSRC];
  */
 
 function js(done) {
-  jsFILES.map(function(singleJSFile) {
+  jsFILES.map(function (singleJSFile) {
     return browserify({
-      entries: [jsFolder + singleJSFile]
+      entries: [jsFolder + singleJSFile],
     })
       .transform(babelify, { presets: ['@babel/preset-env'] })
       .bundle()
