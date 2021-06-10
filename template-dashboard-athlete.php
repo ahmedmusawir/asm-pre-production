@@ -453,7 +453,9 @@ get_header(); ?>
                             <?php else :?>
                             <h1 class="text-number">0</h1>
                             <?php endif; ?>
-                            <a href="/athlete-email-inbox/" class="btn btn-info">View Messages</a>
+                            <a href="/chat-room/" class="btn btn-info">View Messages</a>
+                            <!-- <a href="/athlete-email-inbox/" class="btn btn-info">View Messages</a> -->
+
                         </div>
 
                     </div> <!-- #bottom-task-block end -->

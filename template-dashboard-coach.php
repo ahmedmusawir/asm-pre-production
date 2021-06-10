@@ -88,7 +88,10 @@ get_header(); ?>
                 <?php else :?>
                 <h1 class="text-number email-number">0</h1>
                 <?php endif; ?>
-                <a href="/coach-email-inbox/" class="btn btn-info">View Messages</a>
+                <a href="/chat-room/" class="btn btn-info">View Messages</a>
+                <!-- <a href="/coach-email-inbox/" class="btn btn-info">View Messages</a> -->
+
+
             </div>
 
 
